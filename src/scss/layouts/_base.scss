@@ -1,3 +1,8 @@
 body {
     margin: 0;
 }
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-black);
+}

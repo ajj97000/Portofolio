@@ -31,4 +31,9 @@
     text-transform: capitalize;
     color: var(--link-color);
     font-size: var(--font-size-s);
+
+    &:hover {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+    }
 }

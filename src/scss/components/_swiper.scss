@@ -1,0 +1,35 @@
+.swiper-slide {
+    padding-inline-end: var(--space-4xl);
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    padding: var(--space-5xl) var(--space-none);
+}
+
+.swiper__title {
+    font-size: var(--font-size-4xl);
+    text-transform: capitalize;
+    margin-bottom: var(--space-xl);
+}
+
+.swiper__subtitle {
+    font-size: var(--font-size-l);
+    text-transform: capitalize;
+    margin-bottom: var(--space-s);
+}
+
+.swiper__description {
+    font-size: var(--font-size-m);
+    text-transform: capitalize;
+    margin-bottom: var(--space-xxl);
+}
+
+.swiper__image {
+    width: 400px;
+    height: 400px;
+    padding-top: var(--space-md);
+    border-radius: 400px;
+    background-color: var(--primary-color);
+}

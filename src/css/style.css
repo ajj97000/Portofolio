@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+a:hover {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
 :root {
   --logo-width: 200px;
 }
@@ -37,14 +42,20 @@ body {
   color: var(--link-color);
   font-size: var(--font-size-s);
 }
+.main-header__list-link:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
 
 body {
   margin: 0;
 }
 
 :root {
-  --primary-color: red;
+  --primary-color: #0093FB;
+  --primary-dark-color: #0369b1;
   --secondary-color: black;
+  --white-color: #fff;
   --link-color: #000;
   --gray-light: #efefef;
   --space-none: 0;
@@ -55,6 +66,8 @@ body {
   --space-xl: 24px;
   --space-xxl: 30px;
   --space-xxxl: 40px;
+  --space-4xl: 48px;
+  --space-5xl: 60px;
   --font-size-xs: 14px;
   --font-size-s: 18px;
   --font-size-md: 20px;
@@ -62,20 +75,33 @@ body {
   --font-size-xl: 30px;
   --font-size-xxl: 36px;
   --font-size-xxxl: 42px;
+  --font-size-4xl: 48px;
 }
 
 .button {
   background: none;
-  border: 0;
+  border: 1px solid transparent;
+  padding: var(--space-s) var(--space-md);
+  border-radius: 8px;
 }
 .button--icon {
   width: 40px;
   height: 40px;
   line-height: 40px;
+  padding: var(--space-none);
 }
 .button--icon:hover {
   background-color: var(--gray-light);
   border-radius: 100px;
+}
+.button--primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.button--primary:hover {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border-color: var(--primary-color);
 }
 
 .theme-mode {
@@ -83,4 +109,41 @@ body {
   height: 30px;
   display: flex;
   margin: auto;
+}
+
+.swiper-slide {
+  -webkit-padding-end: var(--space-4xl);
+          padding-inline-end: var(--space-4xl);
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  padding: var(--space-5xl) var(--space-none);
+}
+
+.swiper__title {
+  font-size: var(--font-size-4xl);
+  text-transform: capitalize;
+  margin-bottom: var(--space-xl);
+}
+
+.swiper__subtitle {
+  font-size: var(--font-size-l);
+  text-transform: capitalize;
+  margin-bottom: var(--space-s);
+}
+
+.swiper__description {
+  font-size: var(--font-size-m);
+  text-transform: capitalize;
+  margin-bottom: var(--space-xxl);
+}
+
+.swiper__image {
+  width: 400px;
+  height: 400px;
+  padding-top: var(--space-md);
+  border-radius: 400px;
+  background-color: var(--primary-color);
 }/*# sourceMappingURL=style.css.map */
