@@ -3,6 +3,9 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 
-
 // base files
 @import "./base/variables";
+
+// components files
+@import "./components/buttons";
+@import "./components/theme-mode";

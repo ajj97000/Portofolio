@@ -10,13 +10,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--padding-l) var(--padding-none);
+  padding: var(--space-l) var(--space-none);
 }
 
 .main-header__logo {
   width: var(--logo-width);
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main-header__list {
+  padding: var(--space-none);
+  margin-bottom: var(--space-none);
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__list-item {
+  padding: var(--space-xs) var(--space-s);
+}
+
+.main-header__list-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--link-color);
+  font-size: var(--font-size-s);
 }
 
 body {
@@ -26,12 +45,42 @@ body {
 :root {
   --primary-color: red;
   --secondary-color: black;
-  --padding-none: 0;
-  --padding-xs: 6px;
-  --padding-s: 10px;
-  --padding-md: 16px;
-  --padding-l: 20px;
-  --padding-xl: 24px;
-  --padding-xxl: 30px;
-  --padding-xxxl: 40px;
+  --link-color: #000;
+  --gray-light: #efefef;
+  --space-none: 0;
+  --space-xs: 6px;
+  --space-s: 10px;
+  --space-md: 16px;
+  --space-l: 20px;
+  --space-xl: 24px;
+  --space-xxl: 30px;
+  --space-xxxl: 40px;
+  --font-size-xs: 14px;
+  --font-size-s: 18px;
+  --font-size-md: 20px;
+  --font-size-l: 24px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 36px;
+  --font-size-xxxl: 42px;
+}
+
+.button {
+  background: none;
+  border: 0;
+}
+.button--icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.button--icon:hover {
+  background-color: var(--gray-light);
+  border-radius: 100px;
+}
+
+.theme-mode {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

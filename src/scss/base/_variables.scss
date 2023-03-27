@@ -2,13 +2,25 @@
     // colors 
     --primary-color: red;
     --secondary-color: black;
+    --link-color: #000;
+    --gray-light: #efefef;
+
     // spaces
-    --padding-none: 0;
-    --padding-xs: 6px;
-    --padding-s: 10px;
-    --padding-md: 16px;
-    --padding-l: 20px;
-    --padding-xl: 24px;
-    --padding-xxl: 30px;
-    --padding-xxxl: 40px;
+    --space-none: 0;
+    --space-xs: 6px;
+    --space-s: 10px;
+    --space-md: 16px;
+    --space-l: 20px;
+    --space-xl: 24px;
+    --space-xxl: 30px;
+    --space-xxxl: 40px;
+
+    // font-size 
+    --font-size-xs: 14px;
+    --font-size-s: 18px;
+    --font-size-md: 20px;
+    --font-size-l: 24px;
+    --font-size-xl: 30px;
+    --font-size-xxl: 36px;
+    --font-size-xxxl: 42px;
 }

@@ -6,10 +6,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--padding-l) var(--padding-none);
+    padding: var(--space-l) var(--space-none);
 }
 
 .main-header__logo {
     width: var(--logo-width);
     object-fit: cover;
+}
+
+.main-header__list {
+    padding: var(--space-none);
+    margin-bottom: var(--space-none);
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__list-item {
+    padding: var(--space-xs) var(--space-s);
+}
+
+.main-header__list-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--link-color);
+    font-size: var(--font-size-s);
 }
