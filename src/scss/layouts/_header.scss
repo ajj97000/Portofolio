@@ -1,0 +1,15 @@
+:root {
+    --logo-width: 200px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-l) var(--padding-none);
+}
+
+.main-header__logo {
+    width: var(--logo-width);
+    object-fit: cover;
+}
