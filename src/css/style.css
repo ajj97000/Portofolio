@@ -198,6 +198,10 @@ a:hover {
   transition: 0.3s;
 }
 
+.section {
+  padding: var(--space-xxl) var(--space-none);
+}
+
 :root {
   --primary-color: #0093FB;
   --primary-dark-color: #02528b82;
@@ -344,4 +348,18 @@ a:hover {
   padding-top: var(--space-md);
   border-radius: 500px;
   background-color: var(--primary-color);
+}
+
+.numbers__content {
+  text-align: center;
+}
+
+.numbers__title {
+  font-size: var(--font-size-l);
+}
+
+.numbers__subtitle {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-md);
+  color: var(--primary-color);
 }/*# sourceMappingURL=style.css.map */
