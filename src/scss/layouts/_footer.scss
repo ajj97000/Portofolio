@@ -30,7 +30,7 @@
     &:after {
         content: '';
         position: absolute;
-        bottom: -2px;
+        bottom: -3px;
         left: 0;
         width: 100%;
         height: 2px;
@@ -81,11 +81,18 @@
 }
 
 .main-footer__field {
-    border: 0;
+    border: 2px solid transparent;
     border-radius: 8px;
     padding: var(--space-s) var(--space-md);
     width: 100%;
     margin-bottom: var(--space-s);
+    outline: none;
+
+    &:hover,
+    :focus {
+        border-color: var(--link-color);
+        transition: 0.3s;
+    }
 }
 
 .main-footer__icon {
