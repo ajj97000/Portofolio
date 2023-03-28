@@ -14,9 +14,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- main css  -->
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/scripts/scripts.js"></script>
 </head>
 
-<body>
+<body id="body">
+    <div class="loader"></div>
     <div class="container">
         <!-- header  -->
         <header class="main-header">
@@ -45,8 +47,12 @@
                     <a href="" class="main-header__list-link">Contact</a>
                 </li>
                 <li class="main-header__list-item">
-                    <button class="button button--icon">
-                        <img src="./src/images/dark-mode.svg" alt="" class="theme-mode">
+                    <button class="button button--icon" onclick="themeMode()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="theme-mode" height="40" viewBox="0 96 960 960"
+                            width="40">
+                            <path
+                                d="M480 936q-150 0-255-105T120 576q0-150 105-255t255-105q10 0 20.5.667 10.5.666 24.166 2-37.666 31-59.166 77.833T444 396q0 90 63 153t153 63q53 0 99.667-20.5 46.666-20.5 77.666-56.166 1.334 12.333 2 21.833.667 9.5.667 18.833 0 150-105 255T480 936Zm0-66.666q102 0 179.334-61.167t101.333-147.834q-23.333 9-49.111 13.667-25.778 4.666-51.556 4.666-117.459 0-200.063-82.603Q377.334 513.459 377.334 396q0-22.667 4.333-47.667t14.667-55q-91.334 28.666-150.501 107Q186.666 478.666 186.666 576q0 122 85.667 207.667T480 869.334Zm-6-288.001Z" />
+                        </svg>
                     </button>
                 </li>
             </ul>
@@ -313,6 +319,12 @@
             }
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
+        }
+
+        // dark mode 
+        function themeMode() {
+            var element = document.getElementById("body");
+            element.classList.toggle("dark-mode");
         }
     </script>
 </body>

@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background-color: var(--white-color);
 }
 
 a:hover {
@@ -208,7 +209,7 @@ a:hover {
 :root {
   --primary-color: #0093FB;
   --primary-dark-color: #02528b82;
-  --secondary-color: black;
+  --secondary-color: #000;
   --white-color: #fff;
   --link-color: #000;
   --gray-light: #efefef;
@@ -230,6 +231,15 @@ a:hover {
   --font-size-xxl: 36px;
   --font-size-xxxl: 42px;
   --font-size-4xl: 48px;
+}
+
+.dark-mode {
+  --primary-color: #0093FB;
+  --primary-dark-color: #02528b82;
+  --secondary-color: #fff;
+  --white-color: #000;
+  --link-color: #fff;
+  --gray-light: #ffffff;
 }
 
 .full-width {
@@ -295,6 +305,7 @@ a:hover {
   height: 30px;
   display: flex;
   margin: auto;
+  fill: var(--secondary-color);
 }
 
 .swiper-slide {
@@ -315,6 +326,7 @@ a:hover {
   width: 40px;
   height: 10px;
   border-radius: 6px;
+  background-color: var(--secondary-color);
 }
 .swiper-wrapper .swiper-pagination-bullet-active {
   width: 80px;
@@ -330,6 +342,7 @@ a:hover {
   text-transform: capitalize;
   margin-bottom: var(--space-xl);
   font-weight: bold;
+  color: var(--secondary-color);
 }
 
 .swiper__subtitle {
@@ -337,12 +350,14 @@ a:hover {
   text-transform: capitalize;
   margin-bottom: var(--space-s);
   font-weight: 500;
+  color: var(--secondary-color);
 }
 
 .swiper__description {
   font-size: var(--font-size-m);
   text-transform: capitalize;
   margin-bottom: var(--space-xxl);
+  color: var(--secondary-color);
 }
 
 .swiper__image {
@@ -370,6 +385,7 @@ a:hover {
 .numbers__title {
   font-size: var(--font-size-l);
   margin-bottom: var(--space-none);
+  color: var(--secondary-color);
 }
 
 .numbers__subtitle {
@@ -393,6 +409,7 @@ a:hover {
   border: 1px solid transparent;
   transition: 0.3s;
   font-size: 16px;
+  color: var(--secondary-color);
 }
 
 /* Change background color of buttons on hover */
@@ -411,4 +428,42 @@ a:hover {
   display: none;
   padding: var(--space-l) var(--space-none);
   border-top: none;
+}
+
+.loader {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.loader:after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--gray-light);
+  border-bottom-color: var(--primary-color);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
 }/*# sourceMappingURL=style.css.map */

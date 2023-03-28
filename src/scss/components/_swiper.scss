@@ -15,6 +15,7 @@
         width: 40px;
         height: 10px;
         border-radius: 6px;
+        background-color: var(--secondary-color);
     }
 
     .swiper-pagination-bullet-active {
@@ -33,6 +34,7 @@
     text-transform: capitalize;
     margin-bottom: var(--space-xl);
     font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .swiper__subtitle {
@@ -40,12 +42,14 @@
     text-transform: capitalize;
     margin-bottom: var(--space-s);
     font-weight: 500;
+    color: var(--secondary-color);
 }
 
 .swiper__description {
     font-size: var(--font-size-m);
     text-transform: capitalize;
     margin-bottom: var(--space-xxl);
+    color: var(--secondary-color);
 }
 
 .swiper__image {

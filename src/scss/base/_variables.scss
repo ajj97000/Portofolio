@@ -2,7 +2,7 @@
     // colors 
     --primary-color: #0093FB;
     --primary-dark-color: #02528b82;
-    --secondary-color: black;
+    --secondary-color: #000;
     --white-color: #fff;
     --link-color: #000;
     --gray-light: #efefef;
@@ -28,4 +28,14 @@
     --font-size-xxl: 36px;
     --font-size-xxxl: 42px;
     --font-size-4xl: 48px;
+}
+
+.dark-mode {
+    // colors 
+    --primary-color: #0093FB;
+    --primary-dark-color: #02528b82;
+    --secondary-color: #fff;
+    --white-color: #000;
+    --link-color: #fff;
+    --gray-light: #ffffff;
 }
