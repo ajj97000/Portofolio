@@ -4,4 +4,8 @@
     display: flex;
     margin: auto;
     fill: var(--secondary-color);
+
+    &:hover {
+        fill: var(--primary-color);
+    }
 }

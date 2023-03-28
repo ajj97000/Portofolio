@@ -199,6 +199,16 @@ a:hover {
   transition: 0.3s;
 }
 
+.dark-mode .main-footer__nav-link:hover {
+  color: var(--white-color);
+}
+.dark-mode .main-footer__end .icon:hover {
+  border-color: var(--secondary-color);
+}
+.dark-mode .main-footer__end .icon:hover .main-footer__icon {
+  fill: var(--secondary-color);
+}
+
 .section {
   padding: var(--space-xxl) var(--space-none);
 }
@@ -208,7 +218,7 @@ a:hover {
 
 :root {
   --primary-color: #0093FB;
-  --primary-dark-color: #02528b82;
+  --primary-dark-color: #003053cc;
   --secondary-color: #000;
   --white-color: #fff;
   --link-color: #000;
@@ -265,10 +275,6 @@ a:hover {
   line-height: 40px;
   padding: var(--space-none);
 }
-.button--icon:hover {
-  background-color: var(--gray-light);
-  border-radius: 100px;
-}
 .button--primary {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -306,6 +312,9 @@ a:hover {
   display: flex;
   margin: auto;
   fill: var(--secondary-color);
+}
+.theme-mode:hover {
+  fill: var(--primary-color);
 }
 
 .swiper-slide {
@@ -365,6 +374,14 @@ a:hover {
   height: 500px;
   padding-top: var(--space-md);
   border-radius: 500px;
+  background-color: var(--primary-color);
+}
+
+.dark-mode .swiper-wrapper .swiper-pagination-bullet {
+  opacity: 1;
+}
+.dark-mode .swiper-wrapper .swiper-pagination-bullet-active {
+  width: 80px;
   background-color: var(--primary-color);
 }
 
