@@ -4,6 +4,10 @@
     padding: var(--space-s) var(--space-md);
     border-radius: 8px;
 
+    &:hover {
+        transition: 0.3s;
+    }
+
     &--icon {
         width: 40px;
         height: 40px;

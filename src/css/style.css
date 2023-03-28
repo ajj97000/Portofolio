@@ -7,6 +7,7 @@ body {
 a:hover {
   text-decoration: none;
   color: var(--color-black);
+  transition: 0.3s;
 }
 
 :root {
@@ -43,10 +44,27 @@ a:hover {
   text-transform: capitalize;
   color: var(--link-color);
   font-size: var(--font-size-s);
+  position: relative;
+}
+.main-header__list-link:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
 .main-header__list-link:hover {
   color: var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
+}
+
+.main-header__list-link:hover::after,
+.main-header__list-link:focus::after {
+  opacity: 1;
+  transform: translate3d(10%, 0, 0);
 }
 
 .main-footer {
@@ -76,6 +94,24 @@ a:hover {
   text-decoration: none;
   padding-right: var(--space-m);
   padding-left: var(--space-s);
+  position: relative;
+}
+.main-footer__nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--link-color);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.main-footer__nav-link:hover::after,
+.main-footer__nav-link:focus::after {
+  opacity: 1;
+  transform: translate3d(10%, 0, 0);
 }
 
 .main-footer__copy-rights {
@@ -140,10 +176,14 @@ a:hover {
   border-radius: 100px;
   border: 1px solid var(--white-color);
 }
+.main-footer__end .icon:hover {
+  background-color: var(--primary-dark-color);
+  transition: 0.3s;
+}
 
 :root {
   --primary-color: #0093FB;
-  --primary-dark-color: #0369b1;
+  --primary-dark-color: #02528b82;
   --secondary-color: black;
   --white-color: #fff;
   --link-color: #000;
@@ -181,6 +221,9 @@ a:hover {
   border: 1px solid transparent;
   padding: var(--space-s) var(--space-md);
   border-radius: 8px;
+}
+.button:hover {
+  transition: 0.3s;
 }
 .button--icon {
   width: 40px;

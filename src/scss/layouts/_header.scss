@@ -31,9 +31,27 @@
     text-transform: capitalize;
     color: var(--link-color);
     font-size: var(--font-size-s);
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-color);
+        opacity: 0;
+        transition: opacity 300ms, transform 300ms;
+    }
 
     &:hover {
         color: var(--primary-color);
-        border-bottom: 1px solid var(--primary-color);
     }
+}
+
+.main-header__list-link:hover::after,
+.main-header__list-link:focus::after {
+    opacity: 1;
+    transform: translate3d(10%, 0, 0);
 }
