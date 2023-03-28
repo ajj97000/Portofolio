@@ -29,6 +29,8 @@ a:hover {
 .main-header__logo {
   color: var(--secondary-color);
   text-decoration: none;
+  font-weight: 600;
+  margin-bottom: var(--space-none);
 }
 
 .main-header__list {
@@ -146,6 +148,8 @@ a:hover {
 .main-footer__logo {
   color: var(--white-color);
   text-decoration: none;
+  font-weight: 600;
+  margin-bottom: var(--space-none);
 }
 .main-footer__logo:hover {
   color: var(--white-color);
