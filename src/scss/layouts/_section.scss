@@ -1,3 +1,7 @@
 .section {
     padding: var(--space-xxl) var(--space-none);
+
+    &--center {
+        text-align: center;
+    }
 }

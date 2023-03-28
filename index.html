@@ -103,6 +103,7 @@
                 </div>
             </div>
         </div>
+        <!-- Numbers section  -->
         <section class="section section--center">
             <div class="container">
                 <div class="numbers">
@@ -126,6 +127,46 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio section  -->
+        <section class="section section--center">
+            <div class="container">
+                <div class="tab">
+                    <button class="tablinks active" onclick="openCity(event, 'London')">Gallery</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Pages</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Stories</button>
+                    <button class="tablinks" onclick="openCity(event, 'Links')">Links</button>
+                    <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+                    <button class="tablinks" onclick="openCity(event, 'More')">More</button>
+                </div>
+                <div id="London" class="tabcontent" style="display: block;">
+                    <h3>London</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="Links" class="tabcontent">
+                    <h3>Links</h3>
+                    <p>Links is the capital of Japan.</p>
+                </div>
+                <div id="About" class="tabcontent">
+                    <h3>About</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="More" class="tabcontent">
+                    <h3>More</h3>
+                    <p>Paris is the capital of France.</p>
                 </div>
             </div>
         </section>
@@ -259,6 +300,20 @@
                 clickable: true,
             },
         });
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 </body>
 

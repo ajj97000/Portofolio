@@ -201,6 +201,9 @@ a:hover {
 .section {
   padding: var(--space-xxl) var(--space-none);
 }
+.section--center {
+  text-align: center;
+}
 
 :root {
   --primary-color: #0093FB;
@@ -373,4 +376,39 @@ a:hover {
   font-size: var(--font-size-4xl);
   margin-bottom: var(--space-md);
   color: var(--primary-color);
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: var(--space-s) var(--space-xxl);
+  border-radius: 30px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: var(--space-l) var(--space-none);
+  border-top: none;
 }/*# sourceMappingURL=style.css.map */
