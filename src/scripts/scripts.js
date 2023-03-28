@@ -1,3 +1,5 @@
+// loader function
+
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
   loader.classList.add("loader-hidden");
@@ -5,3 +7,4 @@ window.addEventListener("load", () => {
     document.body.removeChild("loader")
   })
 })
+
