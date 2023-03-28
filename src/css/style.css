@@ -50,6 +50,11 @@ a:hover {
   font-size: var(--font-size-s);
   position: relative;
 }
+.main-header__list-link--active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 2px;
+}
 .main-header__list-link:after {
   content: "";
   position: absolute;
@@ -60,6 +65,7 @@ a:hover {
   background-color: var(--primary-color);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
+  border-radius: 10px;
 }
 .main-header__list-link:hover {
   color: var(--primary-color);
@@ -110,6 +116,7 @@ a:hover {
   background-color: var(--link-color);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
+  border-radius: 10px;
 }
 
 .main-footer__nav-link:hover::after,
@@ -270,6 +277,10 @@ a:hover {
 .button--block {
   display: block;
   width: 100%;
+}
+.button--lg {
+  font-size: var(--font-size-md);
+  padding: var(--space-s) var(--space-xl);
 }
 
 .theme-mode {

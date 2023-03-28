@@ -50,4 +50,9 @@
         display: block;
         width: 100%;
     }
+
+    &--lg {
+        font-size: var(--font-size-md);
+        padding: var(--space-s) var(--space-xl);
+    }
 }

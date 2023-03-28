@@ -33,6 +33,12 @@
     font-size: var(--font-size-s);
     position: relative;
 
+    &--active {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 2px;
+    }
+
     &:after {
         content: '';
         position: absolute;
@@ -43,6 +49,7 @@
         background-color: var(--primary-color);
         opacity: 0;
         transition: opacity 300ms, transform 300ms;
+        border-radius: 10px;
     }
 
     &:hover {
