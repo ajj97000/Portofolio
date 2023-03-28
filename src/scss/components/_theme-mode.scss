@@ -9,3 +9,37 @@
         fill: var(--primary-color);
     }
 }
+
+.dark-mode {
+    .theme-mode--light {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        height: 0;
+        width: 0;
+    }
+
+    .theme-mode--dark {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.theme-mode--light {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    width: 30px;
+    height: 30px;
+}
+
+.theme-mode--dark {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    height: 0;
+    width: 0;
+}
