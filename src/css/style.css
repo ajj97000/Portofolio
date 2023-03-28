@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
 body {
   margin: 0;
+  font-family: "Jost", sans-serif;
 }
 
 a:hover {
@@ -152,12 +154,14 @@ body {
   font-size: var(--font-size-4xl);
   text-transform: capitalize;
   margin-bottom: var(--space-xl);
+  font-weight: bold;
 }
 
 .swiper__subtitle {
   font-size: var(--font-size-l);
   text-transform: capitalize;
   margin-bottom: var(--space-s);
+  font-weight: 500;
 }
 
 .swiper__description {
