@@ -39,8 +39,7 @@
 
 .main-footer__end {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .main-footer__start nav {
@@ -69,4 +68,26 @@
     padding: var(--space-s) var(--space-md);
     width: 100%;
     margin-bottom: var(--space-s);
+}
+
+.main-footer__icon {
+    fill: var(--white-color);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    margin: auto;
+}
+
+.main-footer__end {
+    margin-top: var(--space-s);
+
+    .icon {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 100px;
+        border: 1px solid var(--white-color);
+    }
 }
