@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="fav.png" />
     <title>Portfolio</title>
     <!-- swiper  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -63,6 +64,7 @@
                                 job and can produce good
                                 quality work</p>
                             <button class="button button--primary">Contact Me</button>
+                            <button class="button button--secondary">About Me</button>
                         </div>
                         <div class="swiper-slide">
                             <h2 class="swiper__title">my porpuse</h2>
@@ -98,9 +100,14 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
+                clickable: true,
             },
         });
     </script>

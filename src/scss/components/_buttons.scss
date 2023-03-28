@@ -26,4 +26,19 @@
             border-color: var(--primary-color);
         }
     }
+
+    &--secondary {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+
+        &:hover {
+            color: var(--secondary-color);
+            background-color: var(--white-color);
+            border-color: var(--secondary-color);
+        }
+    }
+
+    &+.button {
+        margin-inline-start: var(--space-md);
+    }
 }
