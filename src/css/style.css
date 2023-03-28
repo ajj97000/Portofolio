@@ -475,7 +475,7 @@ a:hover {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: var(--space-l) var(--space-none);
+  padding: var(--space-xxxl) var(--space-none);
   border-top: none;
 }
 
@@ -515,4 +515,49 @@ a:hover {
 .loader-hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+.container-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 1.2fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "gallery__image1 gallery__image gallery__image6" "gallery__image2 gallery__image gallery__image6" "gallery__image3 gallery__image5 gallery__image7";
+}
+
+.gallery__image1 {
+  grid-area: gallery__image1;
+}
+
+.gallery__image2 {
+  grid-area: gallery__image2;
+}
+
+.gallery__image3 {
+  grid-area: gallery__image3;
+}
+
+.gallery__image5 {
+  grid-area: gallery__image5;
+}
+
+.gallery__image6 {
+  grid-area: gallery__image6;
+}
+
+.gallery__image7 {
+  grid-area: gallery__image7;
+}
+
+.gallery__image {
+  grid-area: gallery__image;
+}
+
+.gallery__image-item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
