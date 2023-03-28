@@ -10,8 +10,10 @@
 }
 
 .main-header__logo {
-    width: var(--logo-width);
-    object-fit: cover;
+    // width: var(--logo-width);
+    // object-fit: cover;
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 .main-header__list {
