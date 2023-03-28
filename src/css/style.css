@@ -131,6 +131,10 @@ body {
           padding-inline-end: var(--space-4xl);
 }
 
+.swiper__content {
+  width: 70%;
+}
+
 .swiper-wrapper {
   display: flex;
   align-items: center;
