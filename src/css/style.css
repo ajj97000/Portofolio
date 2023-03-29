@@ -79,6 +79,10 @@ a:hover {
   transform: translate3d(10%, 0, 0);
 }
 
+.main-header__burger-menu {
+  display: none;
+}
+
 .main-footer {
   background-color: var(--primary-color);
   padding: var(--space-4xl) var(--space-none);
@@ -432,7 +436,7 @@ a:hover {
 
 .numbers__content {
   text-align: center;
-  border: 3px solid var(--primary-color);
+  border: 8px solid var(--primary-color);
   border-radius: 100%;
   padding: var(--space-md);
   width: 250px;

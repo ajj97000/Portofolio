@@ -10,8 +10,6 @@
 }
 
 .main-header__logo {
-    // width: var(--logo-width);
-    // object-fit: cover;
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: 600;
@@ -24,6 +22,10 @@
     list-style: none;
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
 }
 
 .main-header__list-item {
@@ -65,4 +67,8 @@
 .main-header__list-link:focus::after {
     opacity: 1;
     transform: translate3d(10%, 0, 0);
+}
+
+.main-header__burger-menu {
+    display: none;
 }
