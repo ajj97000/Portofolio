@@ -213,9 +213,9 @@ a:hover {
 
 .main-footer__icon {
   fill: var(--white-color);
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
   display: flex;
   margin: auto;
 }
