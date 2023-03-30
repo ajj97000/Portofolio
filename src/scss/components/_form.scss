@@ -1,0 +1,14 @@
+.form__label {
+    display: none;
+}
+
+.form__field {
+    display: block;
+    margin-bottom: var(--space-l);
+    text-transform: capitalize;
+    border: 0;
+    padding: var(--space-md) var(--space-xl);
+    width: 100%;
+    box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
+    border-radius: 30px;
+}

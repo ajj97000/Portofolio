@@ -50,4 +50,8 @@
         font-size: var(--font-size-md);
         padding: var(--space-s) var(--space-xl);
     }
+
+    &--rounded {
+        border-radius: 30px;
+    }
 }
