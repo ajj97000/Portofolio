@@ -1,5 +1,5 @@
 .section {
-    padding: var(--space-xxl) var(--space-none);
+    padding: var(--space-5xl) var(--space-none);
 
     &--center {
         text-align: center;
@@ -14,10 +14,20 @@
 }
 
 .section--primary {
-    background: linear-gradient(180deg, #0093FB, transparent);
-    padding: var(--space-xxxl) var(--space-none);
+    background: var(--primary-color);
 
     .section__title {
         color: var(--white-color);
     }
+}
+
+.section__subtitle {
+    font-size: var(--font-size-l);
+    margin-bottom: var(--space-xxl);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.section--gradiant {
+    background: linear-gradient(45deg, rgb(132, 91, 164), transparent);
 }
