@@ -66,12 +66,16 @@
 }
 
 .main-footer__logo {
-    // width: 200px;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 600;
     margin-bottom: var(--space-none);
     text-transform: uppercase;
+
+    &:after {
+        content: '.';
+        color: var(--secondary-color);
+    }
 
     &:hover {
         color: var(--white-color);

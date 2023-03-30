@@ -15,6 +15,11 @@
     font-weight: 600;
     margin-bottom: var(--space-none);
     text-transform: uppercase;
+
+    &:after {
+        content: '.';
+        color: var(--primary-color);
+    }
 }
 
 .main-header__list {
