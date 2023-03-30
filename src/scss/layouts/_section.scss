@@ -16,4 +16,8 @@
 .section--primary {
     background: linear-gradient(180deg, #0093FB, transparent);
     padding: var(--space-xxxl) var(--space-none);
+
+    .section__title {
+        color: var(--white-color);
+    }
 }

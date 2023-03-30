@@ -248,6 +248,9 @@ a:hover {
   background: linear-gradient(180deg, #0093FB, transparent);
   padding: var(--space-xxxl) var(--space-none);
 }
+.section--primary .section__title {
+  color: var(--white-color);
+}
 
 :root {
   --primary-color: #0093FB;
@@ -525,6 +528,7 @@ a:hover {
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 /* Create an active/current tablink class */
