@@ -12,3 +12,8 @@
     font-weight: bold;
     color: var(--secondary-color);
 }
+
+.section--primary {
+    background: linear-gradient(180deg, #0093FB, transparent);
+    padding: var(--space-xxxl) var(--space-none);
+}

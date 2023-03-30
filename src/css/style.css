@@ -221,7 +221,7 @@ a:hover {
 }
 
 .dark-mode .main-footer__nav-link:hover {
-  color: var(--white-color);
+  color: var(--link-color);
 }
 .dark-mode .main-footer__end .icon:hover {
   border-color: var(--secondary-color);
@@ -242,6 +242,11 @@ a:hover {
   margin-bottom: var(--space-xxl);
   font-weight: bold;
   color: var(--secondary-color);
+}
+
+.section--primary {
+  background: linear-gradient(180deg, #0093FB, transparent);
+  padding: var(--space-xxxl) var(--space-none);
 }
 
 :root {
@@ -519,7 +524,7 @@ a:hover {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: var(--primary-color);
 }
 
 /* Create an active/current tablink class */
