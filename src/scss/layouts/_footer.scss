@@ -137,15 +137,20 @@
 }
 
 .dark-mode {
+
+    .icon {
+        border-color: #fff;
+    }
+
+    .main-footer__icon {
+        fill: #fff;
+    }
+
     .main-footer__nav-link:hover {
-        color: var(--link-color);
+        color: var(--white-color);
     }
 
     .main-footer__end .icon:hover {
         border-color: var(--secondary-color);
-
-        .main-footer__icon {
-            fill: var(--secondary-color);
-        }
     }
 }

@@ -37,13 +37,32 @@
                 <li class="main-header__list-item">
                     <a href="" class="main-header__list-link">Portfolio</a>
                 </li>
-                <li class="main-header__list-item">
-                    <a href="" class="main-header__list-link main-header__list-link--mega-menu">
+                <li class="main-header__list-item main-header__list-item--dropdown">
+                    <a role="button" onclick="megaMenu()"
+                        class="main-header__list-link main-header__list-link--mega-menu">
                         <span>Pages</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"
+                            id="mega-menu-icon">
                             <path d="M480 712 240 472l47.333-47.333L480 617.334l192.667-192.667L720 472 480 712Z" />
                         </svg>
                     </a>
+                    <ul class="mega-menu" id="mega-menu">
+                        <li class="mega-menu__item">
+                            <a href="" class="mega-menu__link">Home</a>
+                        </li>
+                        <li class="mega-menu__item">
+                            <a href="" class="mega-menu__link">About</a>
+                        </li>
+                        <li class="mega-menu__item">
+                            <a href="" class="mega-menu__link">Portfolio</a>
+                        </li>
+                        <li class="mega-menu__item">
+                            <a href="" class="mega-menu__link">Stories</a>
+                        </li>
+                        <li class="mega-menu__item">
+                            <a href="" class="mega-menu__link">Contact</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="main-header__list-item">
                     <a href="" class="main-header__list-link">Stories</a>
@@ -353,26 +372,6 @@
                 clickable: true,
             },
         });
-
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // dark mode 
-        function themeMode() {
-            var element = document.getElementById("body");
-            element.classList.toggle("dark-mode");
-        }
     </script>
 </body>
 

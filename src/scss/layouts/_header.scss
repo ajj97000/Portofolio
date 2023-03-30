@@ -36,6 +36,10 @@
 
 .main-header__list-item {
     padding: var(--space-xs) var(--space-s);
+
+    &--dropdown {
+        position: relative;
+    }
 }
 
 .main-header__list-link {
@@ -68,8 +72,8 @@
         color: var(--primary-color);
     }
 
-
     &--mega-menu {
+
         svg {
             fill: var(--secondary-color);
         }
