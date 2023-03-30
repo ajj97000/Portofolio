@@ -23,7 +23,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-l) var(--space-none);
+  padding: var(--space-xxl) var(--space-none);
 }
 
 .main-header__logo {
@@ -76,6 +76,9 @@ a:hover {
 }
 .main-header__list-link:hover {
   color: var(--primary-color);
+}
+.main-header__list-link--mega-menu svg {
+  fill: var(--secondary-color);
 }
 .main-header__list-link--mega-menu:hover {
   color: var(--primary-color);
@@ -226,7 +229,7 @@ a:hover {
   border: 1px solid var(--white-color);
 }
 .main-footer__end .icon:hover {
-  background-color: var(--primary-dark-color);
+  transform: scale(1.1);
   transition: 0.3s;
 }
 
@@ -263,7 +266,7 @@ a:hover {
 }
 
 :root {
-  --primary-color: #0093FB;
+  --primary-color: #6B5BE5;
   --primary-dark-color: #003053cc;
   --secondary-color: #000;
   --white-color: #fff;
@@ -294,7 +297,7 @@ a:hover {
 }
 
 .dark-mode {
-  --primary-color: #0093FB;
+  --primary-color: #6B5BE5;
   --primary-dark-color: #02528b82;
   --secondary-color: #fff;
   --white-color: #000;
@@ -635,4 +638,29 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 100px;
+}
+.icon--facebook {
+  background-color: #1877F2;
+}
+.icon--twitter {
+  background-color: #1BA8FF;
+}
+.icon--linkedin {
+  background-color: #018AD2;
+}
+.icon--Whatsapp {
+  background-color: #1BD741;
+}
+.icon--instagram {
+  background: linear-gradient(220deg, rgb(240, 44, 125), #FA6D37);
+}
+.icon--tiktok {
+  background-color: #000;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+
+    &--facebook {
+        background-color: #1877F2;
+    }
+
+    &--twitter {
+        background-color: #1BA8FF;
+    }
+
+    &--linkedin {
+        background-color: #018AD2;
+    }
+
+    &--Whatsapp {
+        background-color: #1BD741;
+    }
+
+    &--instagram {
+        background: linear-gradient(220deg, rgb(240, 44, 125), #FA6D37);
+    }
+
+    &--tiktok {
+        background-color: #000;
+    }
+}

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-l) var(--space-none);
+    padding: var(--space-xxl) var(--space-none);
 }
 
 .main-header__logo {
@@ -70,6 +70,10 @@
 
 
     &--mega-menu {
+        svg {
+            fill: var(--secondary-color);
+        }
+
         &:hover {
             color: var(--primary-color);
 

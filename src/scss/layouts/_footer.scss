@@ -130,7 +130,7 @@
         border: 1px solid var(--white-color);
 
         &:hover {
-            background-color: var(--primary-dark-color);
+            transform: scale(1.1);
             transition: 0.3s;
         }
     }
