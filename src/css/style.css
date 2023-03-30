@@ -31,6 +31,7 @@ a:hover {
   text-decoration: none;
   font-weight: 600;
   margin-bottom: var(--space-none);
+  text-transform: uppercase;
 }
 
 .main-header__list {
@@ -154,6 +155,7 @@ a:hover {
   text-decoration: none;
   font-weight: 600;
   margin-bottom: var(--space-none);
+  text-transform: uppercase;
 }
 .main-footer__logo:hover {
   color: var(--white-color);
@@ -241,6 +243,10 @@ a:hover {
   --white-color: #fff;
   --link-color: #000;
   --gray-light: #efefef;
+  --gold-color: #E0B85B;
+  --purple-color: #6B5BE5;
+  --dark-gray-color: #303443;
+  --green-color: #00C39A;
   --space-none: 0;
   --space-xs: 6px;
   --space-s: 10px;
@@ -268,6 +274,10 @@ a:hover {
   --white-color: #000;
   --link-color: #fff;
   --gray-light: #ffffff;
+  --gold-color: #E0B85B;
+  --purple-color: #6B5BE5;
+  --dark-gray-color: #9ca0ac;
+  --green-color: #00C39A;
 }
 
 .full-width {
@@ -276,6 +286,14 @@ a:hover {
 
 .sr-only {
   display: none;
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+
+.color-secondary {
+  color: var(--secondary-color);
 }
 
 .button {
@@ -436,7 +454,6 @@ a:hover {
 
 .numbers__content {
   text-align: center;
-  border: 8px solid var(--primary-color);
   border-radius: 100%;
   padding: var(--space-md);
   width: 250px;
@@ -446,18 +463,31 @@ a:hover {
   margin: auto;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+}
+.numbers__content--gold {
+  background-color: var(--gold-color);
+}
+.numbers__content--purple {
+  background-color: var(--purple-color);
+}
+.numbers__content--dark {
+  background-color: var(--dark-gray-color);
+}
+.numbers__content--green {
+  background-color: var(--green-color);
 }
 
 .numbers__title {
   font-size: var(--font-size-l);
   margin-bottom: var(--space-none);
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .numbers__subtitle {
   font-size: var(--font-size-4xl);
   margin-bottom: var(--space-md);
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 
 /* Style the tab */

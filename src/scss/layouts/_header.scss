@@ -14,6 +14,7 @@
     text-decoration: none;
     font-weight: 600;
     margin-bottom: var(--space-none);
+    text-transform: uppercase;
 }
 
 .main-header__list {
@@ -23,9 +24,9 @@
     display: flex;
     align-items: center;
 
-    @include media-breakpoint-down(md) {
-        display: block;
-    }
+    // @include media-breakpoint-up(md) {
+    //     display: block;
+    // }
 }
 
 .main-header__list-item {
