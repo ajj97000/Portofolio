@@ -67,6 +67,22 @@
     &:hover {
         color: var(--primary-color);
     }
+
+
+    &--mega-menu {
+        &:hover {
+            color: var(--primary-color);
+
+            svg {
+                fill: var(--primary-color);
+                transition: 0.3s;
+            }
+
+            &:after {
+                content: none;
+            }
+        }
+    }
 }
 
 .main-header__list-link:hover::after,
