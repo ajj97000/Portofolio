@@ -751,8 +751,8 @@ a:hover {
 }
 
 .price-card__number {
-  font-size: var(--font-size-xxl);
-  color: var(--primary-dark-color);
+  font-size: var(--font-size-4xl);
+  color: var(--primary-color);
   margin-bottom: var(--space-l);
   font-weight: bold;
   text-transform: capitalize;
