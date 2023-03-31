@@ -19,24 +19,24 @@
 
 .form__field--name {
     padding-right: 60px;
-    background-image: url('../images/user.svg');
+    background-image: url('../images/user.png');
     background-position: 97% 50%;
-    background-size: auto;
+    background-size: 30px;
     background-repeat: no-repeat;
 }
 
 .form__field--email {
     padding-right: 60px;
-    background-image: url('../images/mail.svg');
+    background-image: url('../images/envelope.png');
     background-position: 97% 50%;
-    background-size: auto;
+    background-size: 20px;
     background-repeat: no-repeat;
 }
 
 .form__field--phone {
     padding-right: 60px;
-    background-image: url('../images/phone.svg');
+    background-image: url('../images/phone-call.png');
     background-position: 97% 50%;
-    background-size: auto;
+    background-size: 20px;
     background-repeat: no-repeat;
 }

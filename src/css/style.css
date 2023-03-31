@@ -262,6 +262,9 @@ a:hover {
   font-weight: bold;
   color: var(--secondary-color);
 }
+.section__title--white {
+  color: var(--white-color);
+}
 
 .section--primary {
   background: var(--primary-color);
@@ -279,6 +282,10 @@ a:hover {
 
 .section--gradiant {
   background: linear-gradient(45deg, rgb(132, 91, 164), transparent);
+}
+
+.section--dark {
+  background-color: var(--dark-gray-color);
 }
 
 :root {
@@ -343,6 +350,10 @@ a:hover {
   color: var(--secondary-color);
 }
 
+.color-white {
+  color: var(--white-color);
+}
+
 .margin-bottom-s {
   margin-bottom: var(--space-s);
 }
@@ -379,6 +390,15 @@ a:hover {
   color: var(--secondary-color);
   background-color: var(--white-color);
   border-color: var(--secondary-color);
+}
+.button--white {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+}
+.button--white:hover {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border-color: var(--white-color);
 }
 .button + .button {
   -webkit-margin-start: var(--space-md);
@@ -822,24 +842,24 @@ a:hover {
 
 .form__field--name {
   padding-right: 60px;
-  background-image: url("../images/user.svg");
+  background-image: url("../images/user.png");
   background-position: 97% 50%;
-  background-size: auto;
+  background-size: 30px;
   background-repeat: no-repeat;
 }
 
 .form__field--email {
   padding-right: 60px;
-  background-image: url("../images/mail.svg");
+  background-image: url("../images/envelope.png");
   background-position: 97% 50%;
-  background-size: auto;
+  background-size: 20px;
   background-repeat: no-repeat;
 }
 
 .form__field--phone {
   padding-right: 60px;
-  background-image: url("../images/phone.svg");
+  background-image: url("../images/phone-call.png");
   background-position: 97% 50%;
-  background-size: auto;
+  background-size: 20px;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

@@ -11,6 +11,10 @@
     margin-bottom: var(--space-xxl);
     font-weight: bold;
     color: var(--secondary-color);
+
+    &--white {
+        color: var(--white-color);
+    }
 }
 
 .section--primary {
@@ -30,4 +34,8 @@
 
 .section--gradiant {
     background: linear-gradient(45deg, rgb(132, 91, 164), transparent);
+}
+
+.section--dark {
+    background-color: var(--dark-gray-color);
 }
