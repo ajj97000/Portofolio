@@ -371,16 +371,21 @@
         <section class="section">
             <div class="container">
                 <div class="contact">
+                    <h2 class="section__title">Get In Touch</h2>
                     <div class="row gx-5 align-items-center">
                         <div class="col-6">
-                            <h2 class="section__title">Get In Touch</h2>
                             <form action="/action_page.php" class="form">
                                 <label for="name" class="form__label">Name:</label>
-                                <input class="form__field" type="text" id="text" name="text" placeholder="name">
+                                <input class="form__field form__field--name" type="text" id="text" name="text"
+                                    placeholder="name">
                                 <label for="email" class="form__label">Last name:</label>
-                                <input class="form__field" type="email" id="email" name="email" placeholder="email">
-                                <textarea class="form__field" name="" rows="10" placeholder="Message"></textarea>
-                                <button class="button button--primary button--lg button--rounded"
+                                <input class="form__field form__field--email" type="email" id="email" name="email"
+                                    placeholder="email">
+                                <label for="email" class="form__label">Last name:</label>
+                                <input class="form__field form__field--phone" type="number" id="Phone" name="Phone"
+                                    placeholder="Phone">
+                                <textarea class="form__field" name="" rows="8" placeholder="Message"></textarea>
+                                <button class="button button--primary button--lg button--block button--rounded"
                                     type="submit">Submit</button>
                             </form>
                         </div>

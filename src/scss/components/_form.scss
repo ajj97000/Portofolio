@@ -11,4 +11,32 @@
     width: 100%;
     box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
     border-radius: 30px;
+
+    &::placeholder {
+        color: var(--dark-gray-color);
+    }
+}
+
+.form__field--name {
+    padding-right: 60px;
+    background-image: url('../images/user.svg');
+    background-position: 97% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.form__field--email {
+    padding-right: 60px;
+    background-image: url('../images/mail.svg');
+    background-position: 97% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.form__field--phone {
+    padding-right: 60px;
+    background-image: url('../images/phone.svg');
+    background-position: 97% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
