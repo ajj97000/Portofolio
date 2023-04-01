@@ -65,6 +65,9 @@ a:hover {
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 2px;
 }
+.main-header__list-link--active:hover:after {
+  content: none;
+}
 .main-header__list-link:after {
   content: "";
   position: absolute;
