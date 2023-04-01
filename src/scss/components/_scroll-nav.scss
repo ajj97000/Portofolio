@@ -1,0 +1,29 @@
+.scroll-nav {
+    position: fixed;
+    right: 20px;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    z-index: 9999999;
+
+    .button+.button {
+        margin-inline-start: var(--space-none);
+    }
+}
+
+.scroll-nav__button {
+
+    &:hover {
+        transform: scale(1.3);
+        transition: 0.3s;
+
+        .scroll-nav__icon {
+            fill: var(--primary-color);
+        }
+    }
+}
