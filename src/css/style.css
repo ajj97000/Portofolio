@@ -893,4 +893,8 @@ a:hover {
 }
 .scroll-nav__button:hover .scroll-nav__icon {
   fill: var(--primary-color);
+}
+
+.scroll-nav__icon {
+  fill: var(--secondary-color);
 }/*# sourceMappingURL=style.css.map */
