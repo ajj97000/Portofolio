@@ -51,6 +51,8 @@ a:hover {
 }
 .main-header__list-item--dropdown {
   position: relative;
+  -webkit-padding-end: var(--space-none);
+          padding-inline-end: var(--space-none);
 }
 
 .main-header__list-link {
