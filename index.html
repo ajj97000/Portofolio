@@ -21,9 +21,38 @@
 
 <body id="body">
     <div class="loader"></div>
+    <nav id="navbar" class="navbar">
+        <ul class="nav-menu">
+            <li>
+                <a data-scroll="home" href="#home" class="dot active">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll="about" href="#about" class="dot">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll="services" href="#services" class="dot">
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll="test" href="#test" class="dot">
+                    <span>Testimonials</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll="contact" href="#contact" class="dot">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
         <!-- header  -->
-        <header class="main-header">
+        <header class="main-header" id="home" class="section">
             <h1>
                 <a href="index.html" class="main-header__logo">Portfolio</a>
             </h1>
@@ -147,7 +176,7 @@
             </div>
         </div>
         <!-- Numbers section  -->
-        <section class="section section--center section--primary">
+        <section class="section section--center section--primary" id="about">
             <h2 class="section__title">Numbers</h2>
             <div class="numbers">
                 <div class="container">
@@ -181,7 +210,7 @@
             </div>
         </section>
         <!-- Portfolio section  -->
-        <section class="section section--center">
+        <section class="section section--center" id="services" class="section">
             <h2 class="section__title">Portfolio</h2>
             <div class="container">
                 <div class="tab">
@@ -243,7 +272,7 @@
             </div>
         </section>
         <!-- Prices section  -->
-        <section class="section section--center section--dark">
+        <section class="section section--center section--dark" id="test" class="section">
             <h2 class="section__title section__title--white margin-bottom-s">Prices</h2>
             <h3 class="section__subtitle color-white">Choose Your Plan</h3>
             <div class="price">
@@ -335,7 +364,7 @@
             </div>
         </section>
         <!-- partners section  -->
-        <section class="section section--center">
+        <section class="section section--center" id="contact">
             <div class="container">
                 <h2 class="section__title margin-bottom-s">Partners</h2>
                 <h3 class="section__subtitle">Meet Our Partners</h3>
@@ -399,43 +428,6 @@
                 </div>
             </div>
         </section>
-        <div class="scroll-nav">
-            <button class="button button--icon scroll-nav__button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"
-                    class="scroll-nav__icon">
-                    <path
-                        d="M480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-83 31.5-156t85.833-127q54.334-54 127.334-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82.333-31.5 155.333T763 858.667Q709 913 636 944.5T480 976Zm0-66.666q139.333 0 236.334-97.334 97-97.333 97-236 0-139.333-97-236.334-97.001-97-236.334-97-138.667 0-236 97Q146.666 436.667 146.666 576q0 138.667 97.334 236 97.333 97.334 236 97.334ZM480 576Z" />
-                </svg>
-            </button>
-            <button class="button button--icon scroll-nav__button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"
-                    class="scroll-nav__icon">
-                    <path
-                        d="M480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-83 31.5-156t85.833-127q54.334-54 127.334-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82.333-31.5 155.333T763 858.667Q709 913 636 944.5T480 976Zm0-66.666q139.333 0 236.334-97.334 97-97.333 97-236 0-139.333-97-236.334-97.001-97-236.334-97-138.667 0-236 97Q146.666 436.667 146.666 576q0 138.667 97.334 236 97.333 97.334 236 97.334ZM480 576Z" />
-                </svg>
-            </button>
-            <button class="button button--icon scroll-nav__button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"
-                    class="scroll-nav__icon">
-                    <path
-                        d="M480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-83 31.5-156t85.833-127q54.334-54 127.334-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82.333-31.5 155.333T763 858.667Q709 913 636 944.5T480 976Zm0-66.666q139.333 0 236.334-97.334 97-97.333 97-236 0-139.333-97-236.334-97.001-97-236.334-97-138.667 0-236 97Q146.666 436.667 146.666 576q0 138.667 97.334 236 97.333 97.334 236 97.334ZM480 576Z" />
-                </svg>
-            </button>
-            <button class="button button--icon scroll-nav__button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"
-                    class="scroll-nav__icon">
-                    <path
-                        d="M480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-83 31.5-156t85.833-127q54.334-54 127.334-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82.333-31.5 155.333T763 858.667Q709 913 636 944.5T480 976Zm0-66.666q139.333 0 236.334-97.334 97-97.333 97-236 0-139.333-97-236.334-97.001-97-236.334-97-138.667 0-236 97Q146.666 436.667 146.666 576q0 138.667 97.334 236 97.333 97.334 236 97.334ZM480 576Z" />
-                </svg>
-            </button>
-            <button class="button button--icon scroll-nav__button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"
-                    class="scroll-nav__icon">
-                    <path
-                        d="M480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-83 31.5-156t85.833-127q54.334-54 127.334-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82.333-31.5 155.333T763 858.667Q709 913 636 944.5T480 976Zm0-66.666q139.333 0 236.334-97.334 97-97.333 97-236 0-139.333-97-236.334-97.001-97-236.334-97-138.667 0-236 97Q146.666 436.667 146.666 576q0 138.667 97.334 236 97.333 97.334 236 97.334ZM480 576Z" />
-                </svg>
-            </button>
-        </div>
     </main>
     <!-- footer section  -->
     <footer class="main-footer margin-top-auto">
