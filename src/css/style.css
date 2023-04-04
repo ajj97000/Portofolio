@@ -963,7 +963,8 @@ a:hover {
   text-transform: capitalize;
   background-color: var(--primary-color);
   padding: 10px 20px;
-  border-radius: 3px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
   margin-right: 30px;
   transform: translateX(20px);
   transition: all 0.3s ease;
