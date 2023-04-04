@@ -113,7 +113,7 @@
                         <li class="main-header__list-item">
                             <a href="" class="main-header__list-link">Contact</a>
                         </li>
-                        <li class="main-header__list-item">
+                        <li class="main-header__list-item main-header__list-item--icon">
                             <button class="button button--icon button--theme-mode" onclick="themeMode()">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="theme-mode theme-mode--dark" height="30"
                                     viewBox="0 96 960 960" width="30">
@@ -585,7 +585,7 @@
                 var target = $($(this).attr('href'));
                 $('html, body').animate({
                     scrollTop: target.offset().top
-                }, 600);
+                }, 100);
                 $(this).addClass('active');
                 e.preventDefault();
             });

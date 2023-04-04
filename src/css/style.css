@@ -117,6 +117,10 @@ a:hover {
   height: 70px;
 }
 
+.main-header__list-item--icon {
+  padding-right: var(--space-none);
+}
+
 .main-footer {
   background-color: var(--primary-color);
   padding: var(--space-4xl) var(--space-none);
