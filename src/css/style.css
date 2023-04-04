@@ -901,13 +901,9 @@ a:hover {
 .navbar {
   position: fixed;
   z-index: 9;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  padding: var(--space-xxxl);
-  height: 100%;
-  width: -moz-fit-content;
-  width: fit-content;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
 }
 
 .navbar .nav-menu {
@@ -918,6 +914,7 @@ a:hover {
 
 .navbar .nav-menu li {
   position: relative;
+  min-width: 200px;
   text-align: right;
 }
 
@@ -967,8 +964,6 @@ a:hover {
 .navbar .nav-menu li .dot span {
   display: inline-block;
   opacity: 0;
-  visibility: hidden;
-  width: 0;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: capitalize;
@@ -998,7 +993,4 @@ a:hover {
 .navbar .nav-menu li:hover .dot span {
   transform: translateX(0px);
   opacity: 1;
-  visibility: visible;
-  width: -moz-fit-content;
-  width: fit-content;
 }/*# sourceMappingURL=style.css.map */
