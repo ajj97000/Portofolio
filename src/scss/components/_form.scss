@@ -11,6 +11,7 @@
     width: 100%;
     box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
     border-radius: 30px;
+    background-color: var(--white-color);
 
     &::placeholder {
         color: var(--dark-gray-color);
@@ -39,4 +40,14 @@
     background-position: 97% 50%;
     background-size: 20px;
     background-repeat: no-repeat;
+}
+
+.dark-mode {
+    .form__field {
+        color: var(--secondary-color);
+
+        &::placeholder {
+            color: var(--secondary-color);
+        }
+    }
 }

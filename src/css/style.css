@@ -449,6 +449,10 @@ a:hover {
   color: var(--secondary-color);
 }
 
+.dark-mode .button--primary {
+  color: var(--secondary-color);
+}
+
 .theme-mode {
   width: 30px;
   height: 30px;
@@ -865,6 +869,7 @@ a:hover {
   width: 100%;
   box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
   border-radius: 30px;
+  background-color: var(--white-color);
 }
 .form__field::-moz-placeholder {
   color: var(--dark-gray-color);
@@ -895,6 +900,16 @@ a:hover {
   background-position: 97% 50%;
   background-size: 20px;
   background-repeat: no-repeat;
+}
+
+.dark-mode .form__field {
+  color: var(--secondary-color);
+}
+.dark-mode .form__field::-moz-placeholder {
+  color: var(--secondary-color);
+}
+.dark-mode .form__field::placeholder {
+  color: var(--secondary-color);
 }
 
 /* Start Nav Styles */
@@ -993,4 +1008,8 @@ a:hover {
 .navbar .nav-menu li:hover .dot span {
   transform: translateX(0px);
   opacity: 1;
+}
+
+.dark-mode .navbar .nav-menu li .dot {
+  color: var(--secondary-color);
 }/*# sourceMappingURL=style.css.map */

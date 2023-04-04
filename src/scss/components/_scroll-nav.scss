@@ -95,3 +95,9 @@
     transform: translateX(0px);
     opacity: 1;
 }
+
+.dark-mode {
+    .navbar .nav-menu li .dot {
+        color: var(--secondary-color);
+    }
+}

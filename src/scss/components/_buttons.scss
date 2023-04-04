@@ -76,3 +76,9 @@
         }
     }
 }
+
+.dark-mode {
+    .button--primary {
+        color: var(--secondary-color);
+    }
+}
