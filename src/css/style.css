@@ -872,7 +872,7 @@ a:hover {
 /* Start Nav Styles */
 .navbar {
   position: fixed;
-  z-index: 999;
+  z-index: 9;
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
@@ -892,7 +892,7 @@ a:hover {
 
 .navbar .nav-menu li .dot {
   display: block;
-  color: #fff;
+  color: var(--white-color);
   padding: 5px 0;
 }
 
@@ -910,7 +910,7 @@ a:hover {
   width: 5px;
   height: 5px;
   right: 0;
-  border: 2px solid #181818;
+  border: 2px solid var(--secondary-color);
   transform: translateY(-50%);
 }
 
