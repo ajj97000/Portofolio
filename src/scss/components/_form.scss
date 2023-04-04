@@ -2,6 +2,13 @@
     display: none;
 }
 
+.form__title {
+    color: var(--white-color);
+    text-align: start;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-xl);
+}
+
 .form__field {
     display: block;
     margin-bottom: var(--space-l);

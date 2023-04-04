@@ -537,7 +537,7 @@ a:hover {
   text-transform: capitalize;
   margin-bottom: var(--space-s);
   font-weight: 500;
-  color: var(--secondary-color);
+  color: var(--peach-color);
 }
 
 .swiper__description {
@@ -574,7 +574,7 @@ a:hover {
   margin: auto;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
 }
 .numbers__content--gold {
   background-color: var(--gold-color);
@@ -765,7 +765,7 @@ a:hover {
   z-index: 999;
   padding: var(--space-l);
   list-style: none;
-  box-shadow: 0 1px 5px 0 rgba(39, 25, 77, 0.02), 0 3px 20px 0 rgba(112, 81, 239, 0.04), 0 10px 28px 0 rgba(39, 25, 77, 0.03);
+  box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
 }
 
 .mega-menu__item {
@@ -789,7 +789,7 @@ a:hover {
   border-radius: 16px;
   background-color: var(--white-color);
   border: 2px solid var(--primary-color);
-  box-shadow: 0 1px 5px 0 rgba(39, 25, 77, 0.02), 0 3px 20px 0 rgba(112, 81, 239, 0.04), 0 10px 28px 0 rgba(39, 25, 77, 0.03);
+  box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
 }
 
 .price-card__list {
@@ -858,6 +858,13 @@ a:hover {
 
 .form__label {
   display: none;
+}
+
+.form__title {
+  color: var(--white-color);
+  text-align: start;
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-xl);
 }
 
 .form__field {
