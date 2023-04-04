@@ -16,6 +16,10 @@
     margin-bottom: var(--space-none);
     text-transform: uppercase;
 
+    &:hover {
+        color: var(--secondary-color);
+    }
+
     &:after {
         content: '.';
         color: var(--primary-color);

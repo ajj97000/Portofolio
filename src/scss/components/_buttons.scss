@@ -65,4 +65,14 @@
     &--rounded {
         border-radius: 30px;
     }
+
+    &--gradient {
+        background: var(--gradiant-color);
+        color: var(--white-color);
+
+        &:hover {
+            background-color: var(--white-color);
+            color: var(--secondary-color);
+        }
+    }
 }
