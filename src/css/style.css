@@ -23,7 +23,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-xxl) var(--space-none);
+  padding: var(--space-l) var(--space-none);
 }
 
 .main-header__logo {
@@ -107,6 +107,11 @@ a:hover {
 
 .main-header__burger-menu {
   display: none;
+}
+
+.main-header__logo-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .main-footer {
@@ -252,6 +257,11 @@ a:hover {
 }
 .dark-mode .main-footer__end .icon:hover {
   border-color: var(--secondary-color);
+}
+
+.main-footer__logo-icon {
+  width: 50px;
+  height: 50px;
 }
 
 .section {

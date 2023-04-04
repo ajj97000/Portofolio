@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-xxl) var(--space-none);
+    padding: var(--space-l) var(--space-none);
 }
 
 .main-header__logo {
@@ -108,4 +108,9 @@
 
 .main-header__burger-menu {
     display: none;
+}
+
+.main-header__logo-icon {
+    width: 70px;
+    height: 70px;
 }
