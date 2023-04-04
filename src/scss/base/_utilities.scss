@@ -25,9 +25,3 @@
 .padding-none {
     padding: var(--space-none);
 }
-
-.text-gradiant {
-    background: -webkit-linear-gradient(#6B5BE5 25%, #be5be5 50%, #EA4C89 75%, #fe69a2 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
