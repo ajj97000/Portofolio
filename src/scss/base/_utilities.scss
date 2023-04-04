@@ -1,27 +1,27 @@
 .full-width {
-    width: 100%;
+    width: 100% !important;
 }
 
 .sr-only {
-    display: none;
+    display: none !important;
 }
 
 .color-primary {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .color-secondary {
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
 }
 
 .color-white {
-    color: var(--white-color);
+    color: var(--white-color) !important;
 }
 
 .margin-bottom-s {
-    margin-bottom: var(--space-s);
+    margin-bottom: var(--space-s) !important;
 }
 
 .padding-none {
-    padding: var(--space-none);
+    padding: var(--space-none) !important;
 }
