@@ -414,7 +414,7 @@
             <div class="container">
                 <div class="contact">
                     <h2 class="form__title">Fill The Form</h2>
-                    <div class="row gx-5 align-items-center">
+                    <div class="row gx-5 align-items-start">
                         <div class="col-6">
                             <form action="/action_page.php" class="form">
                                 <label for="name" class="form__label">Name:</label>
@@ -585,7 +585,7 @@
                 var target = $($(this).attr('href'));
                 $('html, body').animate({
                     scrollTop: target.offset().top
-                }, 100);
+                }, 50);
                 $(this).addClass('active');
                 e.preventDefault();
             });

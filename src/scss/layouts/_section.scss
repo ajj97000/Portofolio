@@ -1,5 +1,6 @@
 .section {
     padding: var(--space-5xl) var(--space-none);
+    min-height: 400px;
 
     &--center {
         text-align: center;

@@ -71,6 +71,12 @@
     font-weight: 600;
     margin-bottom: var(--space-none);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin: var(--space-none) var(--space-s);
+    }
 
     &:after {
         content: '.';

@@ -15,10 +15,6 @@ a:hover {
   color: var(--primary-color);
 }
 
-:root {
-  --logo-width: 200px;
-}
-
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -32,6 +28,11 @@ a:hover {
   font-weight: 600;
   margin-bottom: var(--space-none);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.main-header__logo span {
+  margin: var(--space-none) var(--space-s);
 }
 .main-header__logo:hover {
   color: var(--secondary-color);
@@ -65,25 +66,32 @@ a:hover {
   font-size: var(--font-size-s);
   position: relative;
 }
-.main-header__list-link--active {
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 2px;
-}
-.main-header__list-link--active:hover:after {
-  content: none;
-}
 .main-header__list-link:after {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -5px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: var(--primary-color);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-  border-radius: 10px;
+  border-radius: 100px;
+}
+.main-header__list-link--active {
+  color: var(--primary-color);
+}
+.main-header__list-link--active:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+  border-radius: 100px;
 }
 .main-header__list-link:hover {
   color: var(--primary-color);
@@ -193,6 +201,11 @@ a:hover {
   font-weight: 600;
   margin-bottom: var(--space-none);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.main-footer__logo span {
+  margin: var(--space-none) var(--space-s);
 }
 .main-footer__logo:after {
   content: ".";
@@ -273,6 +286,7 @@ a:hover {
 
 .section {
   padding: var(--space-5xl) var(--space-none);
+  min-height: 400px;
 }
 .section--center {
   text-align: center;
@@ -969,15 +983,15 @@ a:hover {
 .navbar .nav-menu li .dot::after {
   width: 20px;
   height: 20px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--peach-color);
   right: -5px;
   transform: translateY(-50%) scale(0);
 }
 
 .navbar .nav-menu li .dot.active::before,
 .navbar .nav-menu li:hover .dot::before {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
+  background: var(--peach-color);
+  border-color: var(--peach-color);
 }
 
 .navbar .nav-menu li .dot.active::after,
@@ -991,7 +1005,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: capitalize;
-  background-color: var(--primary-color);
+  background-color: var(--peach-color);
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
@@ -1004,7 +1018,7 @@ a:hover {
   display: block;
   position: absolute;
   content: "";
-  border-left: 7px solid var(--primary-color);
+  border-left: 7px solid var(--peach-color);
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   top: 50%;

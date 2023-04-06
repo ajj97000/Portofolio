@@ -1,7 +1,3 @@
-:root {
-    --logo-width: 200px;
-}
-
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +11,12 @@
     font-weight: 600;
     margin-bottom: var(--space-none);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin: var(--space-none) var(--space-s);
+    }
 
     &:hover {
         color: var(--secondary-color);
@@ -54,29 +56,34 @@
     font-size: var(--font-size-s);
     position: relative;
 
-    &--active {
-        color: var(--primary-color);
-        border-bottom: 2px solid var(--primary-color);
-        padding-bottom: 2px;
-
-        &:hover {
-            &:after {
-                content: none;
-            }
-        }
-    }
-
     &:after {
         content: '';
         position: absolute;
-        bottom: -3px;
+        bottom: -5px;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 3px;
         background-color: var(--primary-color);
         opacity: 0;
         transition: opacity 300ms, transform 300ms;
-        border-radius: 10px;
+        border-radius: 100px;
+    }
+
+    &--active {
+        color: var(--primary-color);
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+            opacity: 1;
+            transition: opacity 300ms, transform 300ms;
+            border-radius: 100px;
+        }
     }
 
     &:hover {
