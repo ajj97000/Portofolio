@@ -461,6 +461,7 @@ a:hover {
   color: var(--white-color);
 }
 .button--gradient:hover {
+  background: none;
   background-color: var(--white-color);
   color: var(--secondary-color);
 }
@@ -903,7 +904,7 @@ a:hover {
 
 .form__field--name {
   padding-right: 60px;
-  background-image: url("../images/user.png");
+  background-image: url("../images/user.svg");
   background-position: 97% 50%;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -911,7 +912,7 @@ a:hover {
 
 .form__field--email {
   padding-right: 60px;
-  background-image: url("../images/envelope.png");
+  background-image: url("../images/mail.svg");
   background-position: 97% 50%;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -919,7 +920,7 @@ a:hover {
 
 .form__field--phone {
   padding-right: 60px;
-  background-image: url("../images/phone-call.png");
+  background-image: url("../images/phone.svg");
   background-position: 97% 50%;
   background-size: 20px;
   background-repeat: no-repeat;
