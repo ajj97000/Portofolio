@@ -882,7 +882,7 @@ a:hover {
 .form__title {
   color: var(--white-color);
   text-align: start;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-md);
   margin-bottom: var(--space-xl);
 }
 
