@@ -780,6 +780,7 @@ a:hover {
   padding: var(--space-l);
   list-style: none;
   box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
+  border: 1px solid transparent;
 }
 
 .mega-menu__item {
@@ -796,6 +797,10 @@ a:hover {
 
 .mega-menu-icon--rotate {
   transform: rotate(-0.5turn);
+}
+
+.dark-mode .mega-menu--show {
+  border-color: var(--secondary-color);
 }
 
 .price-card {
