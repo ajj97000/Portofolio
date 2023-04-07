@@ -5,6 +5,10 @@
     top: 50%;
     right: 50px;
     transform: translateY(-50%);
+
+    @media (max-width: 767.98px) {
+        display: none;
+    }
 }
 
 .navbar .nav-menu {
