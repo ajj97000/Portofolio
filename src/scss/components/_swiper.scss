@@ -1,5 +1,9 @@
 .swiper-slide {
     padding-inline-end: var(--space-4xl);
+
+    @media (max-width: 767.98px) {
+        padding-inline-end: var(--space-none);
+    }
 }
 
 .swiper__content {
@@ -13,6 +17,7 @@
 .swiper__end {
     @media (max-width: 767.98px) {
         display: block;
+        margin-top: var(--space-xl);
     }
 }
 
@@ -32,6 +37,10 @@
         height: 10px;
         border-radius: 6px;
         background-color: var(--secondary-color);
+
+        @media (max-width: 767.98px) {
+            display: none;
+        }
     }
 
     .swiper-pagination-bullet-active {

@@ -105,6 +105,10 @@
     margin-bottom: var(--space-s);
     outline: none;
 
+    @media (max-width: 767.98px) {
+        margin-bottom: var(--space-md);
+    }
+
     &:hover,
     :focus {
         border-color: var(--link-color);
@@ -123,6 +127,10 @@
 
 .main-footer__end {
     margin-top: var(--space-s);
+
+    @media (max-width: 767.98px) {
+        margin-top: var(--space-md);
+    }
 
     .icon {
         display: flex;

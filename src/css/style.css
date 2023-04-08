@@ -237,6 +237,11 @@ a:hover {
   margin-bottom: var(--space-s);
   outline: none;
 }
+@media (max-width: 767.98px) {
+  .main-footer__field {
+    margin-bottom: var(--space-md);
+  }
+}
 .main-footer__field:hover,
 .main-footer__field :focus {
   border-color: var(--link-color);
@@ -254,6 +259,11 @@ a:hover {
 
 .main-footer__end {
   margin-top: var(--space-s);
+}
+@media (max-width: 767.98px) {
+  .main-footer__end {
+    margin-top: var(--space-md);
+  }
 }
 .main-footer__end .icon {
   display: flex;
@@ -518,6 +528,12 @@ a:hover {
   -webkit-padding-end: var(--space-4xl);
           padding-inline-end: var(--space-4xl);
 }
+@media (max-width: 767.98px) {
+  .swiper-slide {
+    -webkit-padding-end: var(--space-none);
+            padding-inline-end: var(--space-none);
+  }
+}
 
 .swiper__content {
   width: 80%;
@@ -531,6 +547,7 @@ a:hover {
 @media (max-width: 767.98px) {
   .swiper__end {
     display: block;
+    margin-top: var(--space-xl);
   }
 }
 
@@ -550,6 +567,11 @@ a:hover {
   height: 10px;
   border-radius: 6px;
   background-color: var(--secondary-color);
+}
+@media (max-width: 767.98px) {
+  .swiper-container .swiper-pagination-bullet {
+    display: none;
+  }
 }
 .swiper-container .swiper-pagination-bullet-active {
   width: 80px;
