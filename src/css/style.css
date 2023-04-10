@@ -196,6 +196,7 @@ a:hover {
 .main-footer__nav {
   list-style: none;
   padding: var(--space-none);
+  margin-bottom: var(--space-none);
 }
 
 .main-footer__container {
@@ -212,6 +213,11 @@ a:hover {
   color: var(--white-color);
   text-decoration: none;
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .main-footer__nav-link {
+    font-size: var(--font-size-md);
+  }
 }
 .main-footer__nav-link:after {
   content: "";
@@ -309,6 +315,12 @@ a:hover {
   display: flex;
   margin: auto;
 }
+@media (max-width: 767.98px) {
+  .main-footer__icon {
+    width: 26px;
+    height: 26px;
+  }
+}
 
 .main-footer__end {
   margin-top: var(--space-s);
@@ -325,6 +337,13 @@ a:hover {
   line-height: 40px;
   border-radius: 100px;
   border: 1px solid var(--white-color);
+}
+@media (max-width: 767.98px) {
+  .main-footer__end .icon {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
 }
 .main-footer__end .icon:hover {
   transform: scale(1.1);
@@ -745,6 +764,14 @@ a:hover {
 /* Style the tab */
 .tab {
   overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .tab {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: var(--space-s);
+  }
 }
 
 /* Style the buttons inside the tab */
@@ -1237,5 +1264,27 @@ a:hover {
     display: flex;
     align-items: center;
     z-index: 99999;
+  }
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 4px;
+  background-color: var(--gray-light);
+}
+@media (max-width: 767.98px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--peach-color);
+}
+@media (max-width: 767.98px) {
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
   }
 }/*# sourceMappingURL=style.css.map */

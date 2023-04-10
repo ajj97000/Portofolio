@@ -1,6 +1,13 @@
 /* Style the tab */
 .tab {
     overflow: hidden;
+
+    @media (max-width: 767.98px) {
+        display: flex;
+        width: 100%;
+        overflow: auto;
+        padding-bottom: var(--space-s);
+    }
 }
 
 /* Style the buttons inside the tab */

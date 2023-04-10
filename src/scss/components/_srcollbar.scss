@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+    height: 4px;
+    background-color: var(--gray-light);
+
+    @media (max-width: 767.98px) {
+        width: 4px;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--peach-color);
+
+    @media (max-width: 767.98px) {
+        background-color: var(--secondary-color);
+    }
+}
