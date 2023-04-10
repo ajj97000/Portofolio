@@ -209,26 +209,26 @@
                 <div class="container">
                     <div class="row gy-md-0 gy-4">
                         <div class="col-md-3 col-12">
-                            <div class="numbers__content numbers__content--gold">
-                                <h4 class="numbers__subtitle">700+</h4>
+                            <div class="numbers__content numbers__content--gold" id="counter-box">
+                                <h4 class="numbers__subtitle counter" data-number="700" data-duration="2000">0</h4>
                                 <h3 class="numbers__title">Customers</h3>
                             </div>
                         </div>
                         <div class="col-md-3 col-12">
-                            <div class="numbers__content numbers__content--peach">
-                                <h4 class="numbers__subtitle">12k+</h4>
+                            <div class="numbers__content numbers__content--peach" id="counter-box">
+                                <h4 class="numbers__subtitle counter" data-number="22k" data-duration="2000">0</h4>
                                 <h3 class="numbers__title">Sales</h3>
                             </div>
                         </div>
                         <div class="col-md-3 col-12">
-                            <div class="numbers__content numbers__content--green">
-                                <h4 class="numbers__subtitle">50+</h4>
+                            <div class="numbers__content numbers__content--green" id="counter-box">
+                                <h4 class="numbers__subtitle counter" data-number="55" data-duration="2000">0</h4>
                                 <h3 class="numbers__title">Projects</h3>
                             </div>
                         </div>
                         <div class="col-md-3 col-12">
-                            <div class="numbers__content numbers__content--dark">
-                                <h4 class="numbers__subtitle">100+</h4>
+                            <div class="numbers__content numbers__content--dark" id="counter-box">
+                                <h4 class="numbers__subtitle counter" data-number="100" data-duration="2000">0</h4>
                                 <h3 class="numbers__title">Employees</h3>
                             </div>
                         </div>
@@ -667,6 +667,46 @@
             }
             scrNav();
         });
+
+
+        // number counting function 
+        var a = 0;
+        $(window).scroll(function () {
+            var oTop = $("#counter-box").offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $(".counter").each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr("data-number");
+                    $({
+                        countNum: $this.text()
+                    }).animate(
+                        {
+                            countNum: countTo
+                        },
+
+                        {
+                            duration: 850,
+                            easing: "swing",
+                            step: function () {
+                                //$this.text(Math.ceil(this.countNum));
+                                $this.text(
+                                    Math.ceil(this.countNum).toLocaleString("en")
+                                );
+                            },
+                            complete: function () {
+                                $this.text(
+                                    Math.ceil(this.countNum).toLocaleString("en")
+                                );
+                                //alert('finished');
+                            }
+                        }
+                    );
+                });
+                a = 1;
+            }
+        });
+
+
     </script>
 </body>
 
