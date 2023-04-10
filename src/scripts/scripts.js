@@ -43,4 +43,8 @@ function megaMenu() {
 
 function menuBtnFunction(menuBtn) {
   menuBtn.classList.toggle("active");
+  var element = document.getElementById("mobile-menu");
+  element.classList.toggle("main-header__list--opened");
+  var element = document.getElementById("body");
+  element.classList.toggle("overflow-hidden");
 }

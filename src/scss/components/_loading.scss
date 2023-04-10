@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99;
+    z-index: 9999999;
     transition: opacity 0.75s, visibility 0.75s;
 
     &:after {

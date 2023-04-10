@@ -29,6 +29,10 @@
     color: var(--secondary-color);
     text-decoration: none;
 
+    @media (max-width: 767.98px) {
+        font-size: var(--font-size-md);
+    }
+
     &:hover {
         color: var(--primary-color);
     }
