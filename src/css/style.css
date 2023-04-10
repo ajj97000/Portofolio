@@ -584,7 +584,7 @@ a:hover {
 }
 @media (max-width: 767.98px) {
   .swiper-container {
-    padding-top: var(--space-none);
+    padding-top: var(--space-xl);
     display: block;
   }
 }
