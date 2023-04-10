@@ -38,3 +38,9 @@ function megaMenu() {
   var element = document.getElementById("mega-menu-icon");
   element.classList.toggle("mega-menu-icon--rotate");
 }
+
+// burger menu
+
+function menuBtnFunction(menuBtn) {
+  menuBtn.classList.toggle("active");
+}

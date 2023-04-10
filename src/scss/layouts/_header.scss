@@ -16,6 +16,10 @@
 
     span {
         margin: var(--space-none) var(--space-s);
+
+        @media (max-width: 767.98px) {
+            display: none;
+        }
     }
 
     &:hover {
@@ -25,6 +29,10 @@
     &:after {
         content: '.';
         color: var(--primary-color);
+
+        @media (max-width: 767.98px) {
+            display: none;
+        }
     }
 }
 
@@ -115,10 +123,6 @@
 .main-header__list-link:focus::after {
     opacity: 1;
     transform: translate3d(10%, 0, 0);
-}
-
-.main-header__burger-menu {
-    display: none;
 }
 
 .main-header__logo-icon {
