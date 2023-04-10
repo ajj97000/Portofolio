@@ -47,4 +47,6 @@ function menuBtnFunction(menuBtn) {
   element.classList.toggle("main-header__list--opened");
   var element = document.getElementById("body");
   element.classList.toggle("overflow-hidden");
+  var element = document.getElementById("main");
+  element.classList.toggle("overflow-hidden");
 }

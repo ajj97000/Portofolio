@@ -1,8 +1,8 @@
 /* Menu Button 1 */
 .burger-menu {
     height: 23px;
-    width: 40px;
-    line-height: 40px;
+    width: 35px;
+    line-height: 35px;
     cursor: pointer;
     display: none;
     background: none;
@@ -21,8 +21,8 @@
     border-radius: 3px;
     content: '';
     position: absolute;
-    width: 40px;
-    height: 4px;
+    width: 35px;
+    height: 3px;
     margin-top: var(--space-s);
 
     -webkit-transition: .3s ease-in-out;
