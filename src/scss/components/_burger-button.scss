@@ -1,11 +1,13 @@
 /* Menu Button 1 */
 .burger-menu {
-    height: 32px;
+    height: 23px;
     width: 40px;
+    line-height: 40px;
     cursor: pointer;
     display: none;
     background: none;
     border: 0;
+    margin-left: var(--space-l);
 
     @media (max-width: 767.98px) {
         display: block;
@@ -30,11 +32,11 @@
 }
 
 .burger-menu span::before {
-    margin-top: -12px;
+    margin-top: -10px;
 }
 
 .burger-menu span::after {
-    margin-top: 12px;
+    margin-top: var(--space-s);
 }
 
 .burger-menu.active span {
