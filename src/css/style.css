@@ -359,7 +359,7 @@ a:hover {
   fill: #fff;
 }
 .dark-mode .main-footer__nav-link:hover {
-  color: var(--white-color);
+  color: var(--secondary-color);
 }
 .dark-mode .main-footer__end .icon:hover {
   border-color: var(--secondary-color);
@@ -475,6 +475,10 @@ a:hover {
 
 .color-white {
   color: var(--white-color) !important;
+}
+
+.color-peach {
+  color: var(--peach-color) !important;
 }
 
 .margin-bottom-s {
@@ -644,7 +648,7 @@ a:hover {
 }
 
 .swiper__description {
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   text-transform: capitalize;
   margin-bottom: var(--space-xxl);
   color: var(--secondary-color);
