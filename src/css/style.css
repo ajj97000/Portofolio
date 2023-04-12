@@ -772,10 +772,11 @@ a:hover {
   transition: opacity 0.75s, visibility 0.75s;
 }
 .loader:after {
+  position: absolute;
   content: "";
   width: 100px;
   height: 100px;
-  border: 10px solid var(--gray-light);
+  border: 7px solid var(--white-color);
   border-bottom-color: var(--primary-color);
   border-radius: 50%;
   animation: loading 0.75s ease infinite;
@@ -792,6 +793,10 @@ a:hover {
 .loader-hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+.loader__image {
+  position: relative;
 }
 
 .container-gallery {
