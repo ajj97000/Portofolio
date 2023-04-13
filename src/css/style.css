@@ -676,11 +676,9 @@ a:hover {
 }
 
 .numbers__content {
+  padding: var(--space-xxxl) var(--space-l);
   text-align: center;
-  border-radius: 100%;
-  padding: var(--space-md);
-  width: 250px;
-  height: 250px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -711,6 +709,13 @@ a:hover {
   font-size: var(--font-size-4xl);
   margin-bottom: var(--space-md);
   color: var(--white-color);
+}
+
+.numbers__icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: var(--space-md);
+  fill: var(--white-color);
 }
 
 /* Style the tab */
