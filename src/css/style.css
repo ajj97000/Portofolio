@@ -267,6 +267,8 @@ a:hover {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .main-footer__logo span {
   margin: var(--space-none) var(--space-s);
