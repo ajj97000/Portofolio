@@ -371,6 +371,23 @@ a:hover {
   height: 70px;
 }
 
+.main-footer__link {
+  display: block;
+  color: var(--white-color);
+  text-decoration: none;
+  margin-top: var(--space-md);
+}
+.main-footer__link:hover {
+  color: var(--secondary-color);
+}
+
+.main-footer__link-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+  margin-right: var(--space-xs);
+}
+
 .section {
   padding: var(--space-5xl) var(--space-none);
   min-height: 400px;
