@@ -811,39 +811,61 @@ a:hover {
 
 .container-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 1.2fr 1fr;
+  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: "gallery__image1 gallery__image gallery__image6" "gallery__image2 gallery__image gallery__image6" "gallery__image3 gallery__image5 gallery__image7";
+  grid-template-areas: "one two three four four" "five two six four four" "five seven seven eight ten" "five seven seven nine nine" "eleven eleven twelve nine nine";
 }
 
-.gallery__image1 {
-  grid-area: gallery__image1;
+.one {
+  grid-area: one;
 }
 
-.gallery__image2 {
-  grid-area: gallery__image2;
+.two {
+  grid-area: two;
 }
 
-.gallery__image3 {
-  grid-area: gallery__image3;
+.three {
+  grid-area: three;
 }
 
-.gallery__image5 {
-  grid-area: gallery__image5;
+.four {
+  grid-area: four;
 }
 
-.gallery__image6 {
-  grid-area: gallery__image6;
+.five {
+  grid-area: five;
 }
 
-.gallery__image7 {
-  grid-area: gallery__image7;
+.six {
+  grid-area: six;
 }
 
-.gallery__image {
-  grid-area: gallery__image;
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.eleven {
+  grid-area: eleven;
+}
+
+.twelve {
+  grid-area: twelve;
 }
 
 .gallery__image-item {
@@ -851,7 +873,6 @@ a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
 }
 
 .icon {
