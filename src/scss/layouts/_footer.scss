@@ -51,11 +51,8 @@
 
 .main-footer__copy-rights {
     font-size: var(--font-size-s);
-    font-weight: var(--font-regular);
     color: var(--white-color);
-    display: flex;
-    margin: auto;
-    justify-content: center;
+    text-align: center;
 }
 
 .main-footer__end {

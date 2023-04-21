@@ -4,6 +4,13 @@
     padding: var(--space-s) var(--space-md);
     border-radius: 8px;
 
+    @media (max-width: 767.98px) {
+        display: block;
+        width: 100%;
+        height: 60px;
+        font-size: var(--font-size-l);
+    }
+
     &:hover {
         transition: 0.3s;
     }
@@ -49,7 +56,9 @@
     }
 
     &+.button {
-        margin-inline-start: var(--space-md);
+        @media (max-width: 767.98px) {
+            margin-top: var(--space-md);
+        }
     }
 
     &--block {

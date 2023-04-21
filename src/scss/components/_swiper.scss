@@ -16,8 +16,7 @@
 
 .swiper__end {
     @media (max-width: 767.98px) {
-        display: block;
-        margin-top: var(--space-xl);
+        display: none;
     }
 }
 
@@ -27,8 +26,7 @@
     padding: var(--space-5xl) var(--space-none);
 
     @media (max-width: 767.98px) {
-        padding-top: var(--space-xl);
-        padding-bottom: calc(var(--space-4xl) - 4px);
+        padding: var(--space-xl) var(--space-none);
         display: block;
     }
 

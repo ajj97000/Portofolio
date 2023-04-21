@@ -3,6 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--space-l) var(--space-none);
+
+    @media (max-width: 767.98px) {
+        padding-bottom: var(--space-none);
+    }
 }
 
 .main-header__logo {
