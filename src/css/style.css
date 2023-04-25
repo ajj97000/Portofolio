@@ -581,9 +581,9 @@ a:hover {
   color: var(--white-color);
 }
 .button--peach:hover {
-  color: var(--secondary-color);
+  color: var(--peach-color);
   background-color: var(--white-color);
-  border-color: var(--secondary-color);
+  border-color: var(--peach-color);
 }
 .button + .button {
   margin-left: var(--space-md);
