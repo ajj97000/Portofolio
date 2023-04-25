@@ -302,14 +302,14 @@
             <h2 class="section__title">Portfolio</h2>
             <div class="container">
                 <div class="tab">
-                    <button class="tablinks active" onclick="openCity(event, 'London')">Gallery</button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')">Pages</button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Team</button>
-                    <button class="tablinks" onclick="openCity(event, 'Links')">Links</button>
-                    <button class="tablinks" onclick="openCity(event, 'About')">About</button>
-                    <button class="tablinks" onclick="openCity(event, 'More')">More</button>
+                    <button class="tablinks active" onclick="openCity(event, 'all')">All</button>
+                    <button class="tablinks" onclick="openCity(event, 'gallery')">Gallery</button>
+                    <button class="tablinks" onclick="openCity(event, 'camera')">Cameras</button>
+                    <button class="tablinks" onclick="openCity(event, 'phones')">Phones</button>
+                    <button class="tablinks" onclick="openCity(event, 'computers')">Computers</button>
+                    <button class="tablinks" onclick="openCity(event, 'desks')">Desks</button>
                 </div>
-                <div id="London" class="tabcontent" style="display: block;">
+                <div id="all" class="tabcontent" style="display: block;">
                     <div class="container-gallery">
                         <div class="one container-gallery__item">
                             <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
@@ -374,15 +374,15 @@
                     </div>
                 </div>
 
-                <div id="Paris" class="tabcontent">
+                <div id="gallery" class="tabcontent">
                     <div class="container-gallery">
                         <div class="one container-gallery__item">
-                            <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
+                            <img src="./src/images/gallery/10.jpg" alt="Mountain Image" class="container-gallery__image"
                                 title="gallery-image">
                             <div class="container-gallery__overlay"></div>
                         </div>
                         <div class="two container-gallery__item">
-                            <img src="./src/images/gallery/2.jpg" alt="Mountain Image" class="container-gallery__image"
+                            <img src="./src/images/gallery/9.jpg" alt="Mountain Image" class="container-gallery__image"
                                 title="gallery-image">
                             <div class="container-gallery__overlay"></div>
                         </div>
@@ -398,6 +398,71 @@
                         </div>
                         <div class="five container-gallery__item">
                             <img src="./src/images/gallery/5.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="six container-gallery__item">
+                            <img src="./src/images/gallery/6.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="seven container-gallery__item">
+                            <img src="./src/images/gallery/7.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="eight container-gallery__item">
+                            <img src="./src/images/gallery/8.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="nine container-gallery__item">
+                            <img src="./src/images/gallery/2.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="ten container-gallery__item">
+                            <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="eleven container-gallery__item">
+                            <img src="./src/images/gallery/11.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="twelve container-gallery__item">
+                            <img src="./src/images/gallery/12.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="camera" class="tabcontent">
+                    <div class="container-gallery">
+                        <div class="one container-gallery__item">
+                            <img src="./src/images/gallery/3.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="two container-gallery__item">
+                            <img src="./src/images/gallery/4.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="three container-gallery__item">
+                            <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="four container-gallery__item">
+                            <img src="./src/images/gallery/5.jpg" alt="Mountain Image" class="container-gallery__image"
+                                title="gallery-image">
+                            <div class="container-gallery__overlay"></div>
+                        </div>
+                        <div class="five container-gallery__item">
+                            <img src="./src/images/gallery/2.jpg" alt="Mountain Image" class="container-gallery__image"
                                 title="gallery-image">
                             <div class="container-gallery__overlay"></div>
                         </div>
@@ -439,7 +504,7 @@
                     </div>
                 </div>
 
-                <div id="Tokyo" class="tabcontent">
+                <div id="phones" class="tabcontent">
                     <div class="container-gallery">
                         <div class="one container-gallery__item">
                             <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
@@ -503,8 +568,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div id="Links" class="tabcontent">
+                <div id="computers" class="tabcontent">
                     <div class="container-gallery">
                         <div class="one container-gallery__item">
                             <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
@@ -568,71 +632,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="About" class="tabcontent">
-                    <div class="container-gallery">
-                        <div class="one container-gallery__item">
-                            <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="two container-gallery__item">
-                            <img src="./src/images/gallery/2.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="three container-gallery__item">
-                            <img src="./src/images/gallery/3.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="four container-gallery__item">
-                            <img src="./src/images/gallery/4.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="five container-gallery__item">
-                            <img src="./src/images/gallery/5.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="six container-gallery__item">
-                            <img src="./src/images/gallery/6.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="seven container-gallery__item">
-                            <img src="./src/images/gallery/7.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="eight container-gallery__item">
-                            <img src="./src/images/gallery/8.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="nine container-gallery__item">
-                            <img src="./src/images/gallery/9.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="ten container-gallery__item">
-                            <img src="./src/images/gallery/10.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="eleven container-gallery__item">
-                            <img src="./src/images/gallery/11.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                        <div class="twelve container-gallery__item">
-                            <img src="./src/images/gallery/12.jpg" alt="Mountain Image" class="container-gallery__image"
-                                title="gallery-image">
-                            <div class="container-gallery__overlay"></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="More" class="tabcontent">
+                <div id="desks" class="tabcontent">
                     <div class="container-gallery">
                         <div class="one container-gallery__item">
                             <img src="./src/images/gallery/1.jpg" alt="Mountain Image" class="container-gallery__image"
@@ -847,7 +847,7 @@
                                 <input class="form__field form__field--phone" type="number" id="Phone" name="Phone"
                                     placeholder="Phone">
                                 <textarea class="form__field" name="" rows="7" placeholder="Message"></textarea>
-                                <button class="button button--gradient button--lg button--block button--rounded"
+                                <button class="button button--peach button--lg button--block button--rounded"
                                     type="submit">Submit</button>
                             </form>
                         </div>

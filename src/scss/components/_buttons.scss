@@ -55,8 +55,22 @@
         }
     }
 
+    &--peach {
+        background-color: var(--peach-color);
+        color: var(--white-color);
+
+        &:hover {
+            color: var(--secondary-color);
+            background-color: var(--white-color);
+            border-color: var(--secondary-color);
+        }
+    }
+
     &+.button {
+        margin-left: var(--space-md);
+
         @media (max-width: 767.98px) {
+            margin-left: var(--space-none);
             margin-top: var(--space-md);
         }
     }
