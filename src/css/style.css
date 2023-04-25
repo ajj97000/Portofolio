@@ -619,64 +619,11 @@ a:hover {
   color: var(--secondary-color);
 }
 
-.swiper-slide {
-  -webkit-padding-end: var(--space-4xl);
-          padding-inline-end: var(--space-4xl);
-}
-@media (max-width: 767.98px) {
-  .swiper-slide {
-    -webkit-padding-end: var(--space-none);
-            padding-inline-end: var(--space-none);
-  }
+.hero {
+  padding: var(--space-4xl) var(--space-none);
 }
 
-.swiper__content {
-  width: 80%;
-}
-@media (max-width: 767.98px) {
-  .swiper__content {
-    width: 100%;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .swiper__end {
-    display: none;
-  }
-}
-
-.swiper-container {
-  display: flex;
-  align-items: center;
-  padding: var(--space-5xl) var(--space-none);
-}
-@media (max-width: 767.98px) {
-  .swiper-container {
-    padding: var(--space-xl) var(--space-none);
-    display: block;
-  }
-}
-.swiper-container .swiper-pagination-bullet {
-  width: 40px;
-  height: 10px;
-  border-radius: 6px;
-  background-color: var(--secondary-color);
-}
-@media (max-width: 767.98px) {
-  .swiper-container .swiper-pagination-bullet {
-    display: none;
-  }
-}
-.swiper-container .swiper-pagination-bullet-active {
-  width: 80px;
-  background-color: var(--primary-color);
-}
-.swiper-container .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
-.swiper-container .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-  left: 40%;
-}
-
-.swiper__title {
+.hero__title {
   font-size: var(--font-size-4xl);
   text-transform: capitalize;
   margin-bottom: var(--space-xl);
@@ -684,7 +631,7 @@ a:hover {
   color: var(--secondary-color);
 }
 
-.swiper__subtitle {
+.hero__subtitle {
   font-size: var(--font-size-l);
   text-transform: capitalize;
   margin-bottom: var(--space-s);
@@ -692,33 +639,19 @@ a:hover {
   color: var(--peach-color);
 }
 
-.swiper__description {
+.hero__description {
   font-size: var(--font-size-s);
   text-transform: capitalize;
   margin-bottom: var(--space-xxl);
   color: var(--secondary-color);
 }
 
-.swiper__image {
-  width: 500px;
-  height: 500px;
+.hero__image {
+  width: 100%;
+  height: 100%;
   padding-top: var(--space-md);
-  border-radius: 500px;
+  border-radius: 100%;
   background: var(--gradiant-color);
-}
-@media (max-width: 767.98px) {
-  .swiper__image {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.dark-mode .swiper-wrapper .swiper-pagination-bullet {
-  opacity: 1;
-}
-.dark-mode .swiper-wrapper .swiper-pagination-bullet-active {
-  width: 80px;
-  background-color: var(--primary-color);
 }
 
 .numbers__content {
