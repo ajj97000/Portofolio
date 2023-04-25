@@ -839,6 +839,7 @@ a:hover {
   .container-gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -916,6 +917,11 @@ a:hover {
 
 .container-gallery__item {
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .container-gallery__item {
+    width: 47%;
+  }
 }
 .container-gallery__item:hover .container-gallery__overlay {
   display: block;
