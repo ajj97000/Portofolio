@@ -380,12 +380,22 @@ a:hover {
 .main-footer__link:hover {
   color: var(--secondary-color);
 }
+.main-footer__link:hover .main-footer__link-icon {
+  fill: var(--secondary-color);
+}
+.main-footer__link:hover path {
+  fill: var(--secondary-color);
+}
 
 .main-footer__link-icon {
   width: 24px;
   height: 24px;
   fill: var(--white-color);
   margin-right: var(--space-xs);
+}
+.main-footer__link-icon path {
+  fill: var(--white-color);
+  stroke: none;
 }
 
 .section {

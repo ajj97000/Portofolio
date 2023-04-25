@@ -193,6 +193,14 @@
 
     &:hover {
         color: var(--secondary-color);
+
+        .main-footer__link-icon {
+            fill: var(--secondary-color);
+        }
+
+        path {
+            fill: var(--secondary-color);
+        }
     }
 }
 
@@ -201,4 +209,9 @@
     height: 24px;
     fill: var(--white-color);
     margin-right: var(--space-xs);
+
+    path {
+        fill: var(--white-color);
+        stroke: none;
+    }
 }
