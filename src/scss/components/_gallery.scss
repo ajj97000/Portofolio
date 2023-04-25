@@ -12,6 +12,11 @@
         "five seven seven eight ten"
         "five seven seven nine nine"
         "eleven eleven twelve nine nine";
+
+    @media (max-width: 767.98px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .one {

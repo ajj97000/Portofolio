@@ -526,6 +526,10 @@ a:hover {
   overflow: hidden !important;
 }
 
+.margin-none {
+  margin: var(--space-none) !important;
+}
+
 .button {
   background: none;
   border: 1px solid transparent;
@@ -818,6 +822,12 @@ a:hover {
   gap: 20px 20px;
   grid-auto-flow: row;
   grid-template-areas: "one two three four four" "five two six four four" "five seven seven eight ten" "five seven seven nine nine" "eleven eleven twelve nine nine";
+}
+@media (max-width: 767.98px) {
+  .container-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .one {
