@@ -200,6 +200,11 @@ a:hover {
   padding: var(--space-4xl) var(--space-none);
   align-items: start;
 }
+@media (max-width: 767.98px) {
+  .main-footer {
+    text-align: center;
+  }
+}
 
 .main-footer__nav {
   list-style: none;
@@ -255,6 +260,13 @@ a:hover {
 .main-footer__end {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  .main-footer__start {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .main-footer__start nav {
