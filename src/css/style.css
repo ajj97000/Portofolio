@@ -356,9 +356,6 @@ a:hover {
 .dark-mode .icon {
   border-color: #fff;
 }
-.dark-mode .main-footer__icon {
-  fill: #fff;
-}
 .dark-mode .main-footer__nav-link:hover {
   color: var(--secondary-color);
 }
@@ -981,14 +978,14 @@ a:hover {
 }
 .icon--facebook {
   background-color: #1877F2;
-  fill: var(--white-color);
+  fill: #fff;
 }
 .icon--facebook:hover {
   fill: #1877F2;
   background-color: #fff;
 }
 .icon--twitter {
-  fill: var(--white-color);
+  fill: #fff;
   background-color: #1BA8FF;
 }
 .icon--twitter:hover {
@@ -996,7 +993,7 @@ a:hover {
   background-color: #fff;
 }
 .icon--linkedin {
-  fill: var(--white-color);
+  fill: #fff;
   background-color: #018AD2;
 }
 .icon--linkedin:hover {
@@ -1004,7 +1001,7 @@ a:hover {
   background-color: #fff;
 }
 .icon--Whatsapp {
-  fill: var(--white-color);
+  fill: #fff;
   background-color: #1BD741;
 }
 .icon--Whatsapp:hover {
@@ -1012,7 +1009,7 @@ a:hover {
   background-color: #fff;
 }
 .icon--instagram {
-  fill: var(--white-color);
+  fill: #fff;
   background: linear-gradient(220deg, rgb(240, 44, 125), #FA6D37);
 }
 .icon--instagram:hover {
@@ -1020,7 +1017,7 @@ a:hover {
   background: #fff;
 }
 .icon--tiktok {
-  fill: var(--white-color);
+  fill: #fff;
   background-color: #000;
 }
 .icon--tiktok:hover {
