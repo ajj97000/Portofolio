@@ -6,25 +6,61 @@
 
     &--facebook {
         background-color: #1877F2;
+        fill: var(--white-color);
+
+        &:hover {
+            fill: #1877F2;
+            background-color: #fff;
+        }
     }
 
     &--twitter {
+        fill: var(--white-color);
         background-color: #1BA8FF;
+
+        &:hover {
+            fill: #1BA8FF;
+            background-color: #fff;
+        }
     }
 
     &--linkedin {
+        fill: var(--white-color);
         background-color: #018AD2;
+
+        &:hover {
+            fill: #018AD2;
+            background-color: #fff;
+        }
     }
 
     &--Whatsapp {
+        fill: var(--white-color);
         background-color: #1BD741;
+
+        &:hover {
+            fill: #1BD741;
+            background-color: #fff;
+        }
     }
 
     &--instagram {
+        fill: var(--white-color);
         background: linear-gradient(220deg, rgb(240, 44, 125), #FA6D37);
+
+        &:hover {
+            fill: #f02c7d;
+            background: #fff;
+        }
     }
 
     &--tiktok {
+        fill: var(--white-color);
         background-color: #000;
+
+        &:hover {
+            fill: #000;
+            background-color: #fff;
+        }
     }
 }
