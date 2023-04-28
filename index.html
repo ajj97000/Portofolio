@@ -189,7 +189,7 @@
             <div class="numbers">
                 <div class="container">
                     <div class="row gy-md-0 gy-4">
-                        <div class="col-md-3 col-6 animate__animated animate__fadeInLeft">
+                        <div class="col-md-3 col-6 animate__animated animate-delay animate__fadeInLeft">
                             <div class="numbers__content numbers__content--gold" id="counter-box">
                                 <svg class="numbers__icon" version="1.1" viewBox="0 0 50 50" xml:space="preserve"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -206,7 +206,7 @@
                                 <h3 class="numbers__title">Customers</h3>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 animate__animated animate__fadeInDown">
+                        <div class="col-md-3 col-6 animate__animated animate-delay animate__fadeInDown">
                             <div class="numbers__content numbers__content--peach" id="counter-box">
                                 <svg class="numbers__icon" id="Layer_1" version="1.1" viewBox="0 0 50 50"
                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -228,7 +228,7 @@
                                 <h3 class="numbers__title">Sales</h3>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 animate__animated animate__fadeInUp">
+                        <div class="col-md-3 col-6 animate__animated animate-delay animate__fadeInUp">
                             <div class="numbers__content numbers__content--green" id="counter-box">
                                 <svg class="numbers__icon" version="1.1" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -251,7 +251,7 @@
                                 <h3 class="numbers__title">Projects</h3>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 animate__animated animate__fadeInRight">
+                        <div class="col-md-3 col-6 animate__animated animate-delay animate__fadeInRight">
                             <div class="numbers__content numbers__content--dark" id="counter-box">
                                 <svg class="numbers__icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Effective_employees">
@@ -1072,6 +1072,50 @@
             backSpeed: 100,
             loop: true
         })
+
+        // animate 
+        $(document).ready(function () {
+
+            /** ---------------------------- //
+             *  @group viewport trigger script 
+             * for adding or removing classes from elements in view within viewport
+            */
+
+            var $animationElements = $('.animate__animated');
+            var $window = $(window);
+
+            // ps: Let's FIRST disable triggering on small devices!
+            var isMobile = window.matchMedia("only screen and (max-width: 768px)");
+            if (isMobile.matches) {
+                $animationElements.removeClass('animate__animated');
+            }
+
+            function checkIfInView() {
+
+                var windowHeight = $window.height();
+                var windowTopPosition = $window.scrollTop();
+                var windowBottomPosition = (windowTopPosition + windowHeight);
+
+                $.each($animationElements, function () {
+                    var $element = $(this);
+                    var elementHeight = $element.outerHeight();
+                    var elementTopPosition = $element.offset().top;
+                    var elementBottomPosition = (elementTopPosition + elementHeight);
+
+                    //check to see if this current container is within viewport
+                    if ((elementBottomPosition >= windowTopPosition) &&
+                        (elementTopPosition <= windowBottomPosition)) {
+                        $element.addClass('in-view');
+                    } else {
+                        $element.removeClass('in-view');
+                    }
+                });
+            }
+
+            $window.on('scroll resize', checkIfInView);
+            $window.trigger('scroll');
+        });
+
     </script>
 </body>
 
