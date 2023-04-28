@@ -42,7 +42,7 @@ a:hover {
   }
 }
 .main-header__logo span {
-  margin: var(--space-none) var(--space-s);
+  margin-left: var(--space-s);
   font-size: var(--font-size-xl);
 }
 @media (max-width: 767.98px) {
@@ -285,7 +285,7 @@ a:hover {
   width: fit-content;
 }
 .main-footer__logo span {
-  margin: var(--space-none) var(--space-s);
+  margin-left: var(--space-s);
   font-size: var(--font-size-xl);
 }
 .main-footer__logo:after {
