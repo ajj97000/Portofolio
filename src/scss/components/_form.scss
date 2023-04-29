@@ -25,30 +25,6 @@
     }
 }
 
-.form__field--name {
-    padding-right: 60px;
-    background-image: url('../images/user.svg');
-    background-position: 97% 50%;
-    background-size: 30px;
-    background-repeat: no-repeat;
-}
-
-.form__field--email {
-    padding-right: 60px;
-    background-image: url('../images/mail.svg');
-    background-position: 97% 50%;
-    background-size: 20px;
-    background-repeat: no-repeat;
-}
-
-.form__field--phone {
-    padding-right: 60px;
-    background-image: url('../images/phone.svg');
-    background-position: 97% 50%;
-    background-size: 20px;
-    background-repeat: no-repeat;
-}
-
 .dark-mode {
     .form__field {
         color: var(--secondary-color);
