@@ -1435,15 +1435,10 @@ a:hover {
   --animate-delay: .5s;
 }
 
-/* Only this element will take half the time to finish */
-.my-element {
-  --animate-duration: 0.5s;
-}
-
 .animate__animated {
   --animate-delay: .5s;
 }
 
 .animate-delay.in-view {
-  animation: fadeInUp 0.5s;
+  animation: fadeInUp 0.5s !important;
 }/*# sourceMappingURL=style.css.map */
