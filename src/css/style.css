@@ -1439,6 +1439,22 @@ a:hover {
   --animate-delay: .5s;
 }
 
-.animate-delay.in-view {
-  animation: fadeInUp 0.5s !important;
+.animate__fadeInUp,
+.animate__fadeInDown,
+.animate__fadeInLeft,
+.animate__fadeInRight {
+  animation: unset;
+}
+
+.animation-reveal.animation-active .animate__fadeInUp {
+  animation: fadeInUp 0.5s;
+}
+.animation-reveal.animation-active .animate__fadeInDown {
+  animation: fadeInDown 0.5s;
+}
+.animation-reveal.animation-active .animate__fadeInLeft {
+  animation: fadeInLeft 0.5s;
+}
+.animation-reveal.animation-active .animate__fadeInRight {
+  animation: fadeInRight 0.5s;
 }/*# sourceMappingURL=style.css.map */
