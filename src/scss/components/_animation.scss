@@ -12,7 +12,8 @@
 .animate__fadeInUp,
 .animate__fadeInDown,
 .animate__fadeInLeft,
-.animate__fadeInRight {
+.animate__fadeInRight,
+.animate__fadeIn {
     animation: unset;
     opacity: 0;
 }
@@ -57,6 +58,11 @@
 
     .animate__fadeInRight {
         animation: fadeInRight .5s;
+        opacity: 1;
+    }
+
+    .animate__fadeIn {
+        animation: fadeIn .5s;
         opacity: 1;
     }
 }
