@@ -1444,17 +1444,39 @@ a:hover {
 .animate__fadeInLeft,
 .animate__fadeInRight {
   animation: unset;
+  opacity: 0;
+}
+
+.animations-hero .animate__fadeInUp {
+  animation: fadeInUp 0.5s;
+  opacity: 1;
+}
+.animations-hero .animate__fadeInDown {
+  animation: fadeInDown 0.5s;
+  opacity: 1;
+}
+.animations-hero .animate__fadeInLeft {
+  animation: fadeInLeft 0.5s;
+  opacity: 1;
+}
+.animations-hero .animate__fadeInRight {
+  animation: fadeInRight 0.5s;
+  opacity: 1;
 }
 
 .animation-reveal.animation-active .animate__fadeInUp {
   animation: fadeInUp 0.5s;
+  opacity: 1;
 }
 .animation-reveal.animation-active .animate__fadeInDown {
   animation: fadeInDown 0.5s;
+  opacity: 1;
 }
 .animation-reveal.animation-active .animate__fadeInLeft {
   animation: fadeInLeft 0.5s;
+  opacity: 1;
 }
 .animation-reveal.animation-active .animate__fadeInRight {
   animation: fadeInRight 0.5s;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

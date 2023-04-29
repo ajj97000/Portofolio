@@ -14,22 +14,49 @@
 .animate__fadeInLeft,
 .animate__fadeInRight {
     animation: unset;
+    opacity: 0;
+}
+
+.animations-hero {
+    .animate__fadeInUp {
+        animation: fadeInUp .5s;
+        opacity: 1;
+    }
+
+    .animate__fadeInDown {
+        animation: fadeInDown .5s;
+        opacity: 1;
+    }
+
+    .animate__fadeInLeft {
+        animation: fadeInLeft .5s;
+        opacity: 1;
+    }
+
+    .animate__fadeInRight {
+        animation: fadeInRight .5s;
+        opacity: 1;
+    }
 }
 
 .animation-reveal.animation-active {
     .animate__fadeInUp {
         animation: fadeInUp .5s;
+        opacity: 1;
     }
 
     .animate__fadeInDown {
         animation: fadeInDown .5s;
+        opacity: 1;
     }
 
     .animate__fadeInLeft {
         animation: fadeInLeft .5s;
+        opacity: 1;
     }
 
     .animate__fadeInRight {
         animation: fadeInRight .5s;
+        opacity: 1;
     }
 }
