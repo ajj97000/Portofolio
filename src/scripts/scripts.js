@@ -33,14 +33,6 @@ function themeMode() {
   element.classList.toggle("dark-mode");
 }
 
-// mega menu 
-function megaMenu() {
-  var element = document.getElementById("mega-menu");
-  element.classList.toggle("mega-menu--show");
-  var element = document.getElementById("mega-menu-icon");
-  element.classList.toggle("mega-menu-icon--rotate");
-}
-
 // burger menu
 
 function menuBtnFunction(menuBtn) {
