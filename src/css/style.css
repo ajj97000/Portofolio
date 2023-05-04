@@ -912,6 +912,7 @@ a:hover {
   animation: slide 0.3s forwards;
   animation-delay: 0.5s;
   transition: 0.5s;
+  border-radius: 16px;
 }
 
 .container-gallery__image {
@@ -919,6 +920,7 @@ a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 16px;
 }
 
 .container-gallery__item {
