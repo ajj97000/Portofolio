@@ -5,6 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--white-color);
   position: relative;
+  scroll-behavior: smooth;
 }
 @media (max-width: 767.98px) {
   html,
@@ -327,6 +328,8 @@ a:hover {
 @media (max-width: 767.98px) {
   .main-footer__field {
     margin-bottom: var(--space-md);
+    height: 60px;
+    font-size: var(--font-size-md);
   }
 }
 .main-footer__field:hover,
@@ -379,6 +382,20 @@ a:hover {
 }
 .dark-mode .main-footer__end .icon:hover {
   border-color: var(--secondary-color);
+}
+.dark-mode .main-footer .button--secondary {
+  background-color: #000;
+  color: #fff;
+}
+.dark-mode .main-footer__field {
+  background-color: #000;
+  color: #fff;
+}
+.dark-mode .main-footer__field::-moz-placeholder {
+  color: #fff;
+}
+.dark-mode .main-footer__field::placeholder {
+  color: #fff;
 }
 
 .main-footer__logo-icon {
@@ -559,7 +576,7 @@ a:hover {
     display: block;
     width: 100%;
     height: 60px;
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-md);
   }
 }
 .button:hover {
@@ -1104,6 +1121,11 @@ a:hover {
   box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
   border-radius: 30px;
   background-color: var(--white-color);
+}
+@media (max-width: 767.98px) {
+  .form__field {
+    font-size: var(--font-size-md);
+  }
 }
 .form__field::-moz-placeholder {
   color: var(--dark-gray-color);

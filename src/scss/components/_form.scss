@@ -20,6 +20,10 @@
     border-radius: 30px;
     background-color: var(--white-color);
 
+    @media (max-width: 767.98px) {
+        font-size: var(--font-size-md);
+    }
+
     &::placeholder {
         color: var(--dark-gray-color);
     }
