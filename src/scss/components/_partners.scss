@@ -17,3 +17,10 @@
     height: 100%;
     object-fit: contain;
 }
+
+.partners__title {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-none);
+}
