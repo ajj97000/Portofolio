@@ -22,9 +22,9 @@
 </head>
 
 <body id="body">
-    <!-- <div class="loader">
+    <div class="loader">
         <img src="./src/images/Logo.svg" alt="" class="loader__image">
-    </div> -->
+    </div>
     <nav id="navbar" class="navbar">
         <ul class="nav-menu">
             <li>
@@ -1245,23 +1245,6 @@
             backSpeed: 100,
             loop: true
         })
-
-        // animate 
-        function reveal() {
-            var reveals = document.querySelectorAll(".animation-reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("animation-active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
     </script>
 </body>
 

@@ -1,5 +1,21 @@
-// loader function
+// animate 
+function reveal() {
+  var reveals = document.querySelectorAll(".animation-reveal");
 
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("animation-active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// loader function
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
   loader.classList.add("loader-hidden");
@@ -8,6 +24,7 @@ window.addEventListener("load", () => {
     var element = document.getElementById("body");
     element.classList.toggle("overflow-hidden");
   })
+  reveal();
 })
 
 
