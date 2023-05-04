@@ -1452,4 +1452,17 @@ a:hover {
 .main-footer .animation-reveal.animation-active .animate__fadeInUp-6 {
   animation: fadeInUp 1.2s;
   opacity: 1;
+}
+
+.contact .animation-reveal.animation-active .animate__fadeInLeft-2 {
+  animation: fadeInLeft 0.8s;
+  opacity: 1;
+}
+.contact .animation-reveal.animation-active .animate__fadeInLeft-3 {
+  animation: fadeInLeft 0.9s;
+  opacity: 1;
+}
+.contact .animation-reveal.animation-active .animate__fadeInLeft-4 {
+  animation: fadeInLeft 1s;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
