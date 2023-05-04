@@ -113,3 +113,21 @@
         opacity: 1;
     }
 }
+
+.contact .animation-reveal.animation-active {
+
+    .animate__fadeInLeft-2 {
+        animation: fadeInLeft .8s;
+        opacity: 1;
+    }
+
+    .animate__fadeInLeft-3 {
+        animation: fadeInLeft .9s;
+        opacity: 1;
+    }
+
+    .animate__fadeInLeft-4 {
+        animation: fadeInLeft 1s;
+        opacity: 1;
+    }
+}
