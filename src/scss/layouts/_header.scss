@@ -28,7 +28,7 @@
         font-size: var(--font-size-xl);
 
         @media (max-width: 767.98px) {
-            font-size: var(--font-size-md);
+            font-size: var(--font-size-l);
         }
     }
 
@@ -181,11 +181,6 @@
 .main-header__logo-icon {
     width: 70px;
     height: 70px;
-
-    @media (max-width: 767.98px) {
-        width: 60px;
-        height: 60px;
-    }
 }
 
 .main-header__list-item--icon {
