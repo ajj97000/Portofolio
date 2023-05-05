@@ -4,7 +4,7 @@
     height: 4px;
     background-color: var(--gray-light);
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 992px) {
         width: 4px;
     }
 }
@@ -13,7 +13,7 @@
     border-radius: 4px;
     background-color: var(--peach-color);
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 992px) {
         background-color: var(--secondary-color);
     }
 }
@@ -21,7 +21,7 @@
 .dark-mode {
 
     ::-webkit-scrollbar-thumb {
-        @media (max-width: 767.98px) {
+        @media (max-width: 992px) {
             background-color: var(--primary-color);
         }
     }
